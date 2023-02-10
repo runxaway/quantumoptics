@@ -95,13 +95,12 @@ const config: webpack.Configuration = {
         patterns: [
             {
                 from: 'src/favicons',
-                to: 'favicons',
-                noErrorOnMissing: true
+                to: 'favicons'
+
             },
             {
                 from: 'src/images',
-                to: 'images',
-                noErrorOnMissing: true
+                to: 'images'
             },
         ],
         }),
