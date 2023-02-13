@@ -1,9 +1,11 @@
 import React from 'react';
 
-function App() {
-  return (
-    <></>
-  );
-}
+import Main from './pages/Main/Main'
+
+const App = (): JSX.Element => {
+    return (
+        <Main />
+    );
+};
 
 export default App;
