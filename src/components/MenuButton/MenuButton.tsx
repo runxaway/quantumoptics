@@ -7,7 +7,7 @@ type ButtonProps = {
     href?: string;
 };
 
-export function MenuButton(props: ButtonProps) : JSX.Element {
+export function MenuButton(props: ButtonProps): JSX.Element {
     return (
         <div className={styles.MenuButton}>
             <div className={styles.ButtonLabel}>{props.label}</div>
