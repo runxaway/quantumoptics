@@ -4,3 +4,17 @@
     width: 1440px;
     height: 3000px;
 }
+
+.Body {
+    padding-top: 115px;
+
+    .FirstBlock {
+        padding: 0px 203px;
+
+        .ButtonsWrapper {
+            padding-top: 38px;
+            padding-left: 37px;
+            padding-bottom: 18px;
+        }
+    }
+}

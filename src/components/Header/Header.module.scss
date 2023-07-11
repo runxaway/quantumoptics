@@ -4,9 +4,10 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.05) 100%);
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(15px);
     position: fixed;
     display: flex;
+    z-index: 2;
 
     .Logo {
         margin-top: 21px;
