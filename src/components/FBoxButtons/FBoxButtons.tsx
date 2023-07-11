@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { BaseSyntheticEvent, useState } from "react";
 
 import styles from './FBoxButtons.module.scss';
 
@@ -11,15 +11,16 @@ type FBoxButtonsProps = {
 export function FBoxButtons(props: FBoxButtonsProps) {
     const [isHover, setIsHover] = useState(false);
 
+    const checkFocus = (focus: any) => {
+        focus ? setIsHover(true) : setIsHover(false);
+        props.hover(focus);
+        console.log(focus, isHover)
+    }
+
     return (
         <div
             className={styles.Box}
-            onFocus={
-                () => {
-                    setIsHover(true)
-                    props.hover = isHover
-                }
-            }
+            onClick={checkFocus}
         >
             <div className={styles.ButtonName}>
                 {props.name}

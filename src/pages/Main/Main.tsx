@@ -9,6 +9,10 @@ import { FBoxButtons } from "../../components/FBoxButtons/FBoxButtons";
 const Main = (): JSX.Element => {
     const [isShow, setIsShow] = useState(false);
 
+    const handleFocus = (isHover: boolean) => {
+        isHover ? setIsShow(true) : setIsShow(false);
+    };
+
     return (
         <div className={styles.BackgroundBlur}>
             <Header/>
@@ -18,23 +22,23 @@ const Main = (): JSX.Element => {
                         <div className={styles.ButtonsWrapper}>
                             <FBoxButtons
                                 name="Лазеры"
-                                hover={isShow}
+                                hover={handleFocus}
                             />
                             <FBoxButtons
                                 name="Лазерные модули"
-                                hover={isShow}
+                                hover={handleFocus}
                             />
                             <FBoxButtons
                                 name="Модули обработки информации"
-                                hover={isShow}
+                                hover={handleFocus}
                             />
                             <FBoxButtons
                                 name="Источники питания и управления"
-                                hover={isShow}
+                                hover={handleFocus}
                             />
                         </div>
                         <div className={styles.Line}></div>
-                        {isShow ? (<div>adjsakdjalkdjlaksdjalksdjalsdlk</div>) : ''}
+                        {isShow ? <div>adjsakdjalkdjlaksdjalksdjalsdlk</div> : ''}
                     </SBox>
                 </div>
             </div>
