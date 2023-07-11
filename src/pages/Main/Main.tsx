@@ -6,9 +6,9 @@ import { Header } from "../../components/Header/Header";
 import { SBox } from "../../components/SBox/SBox";
 import { FBoxButtons } from "../../components/FBoxButtons/FBoxButtons";
 
-const [isShow, setIsShow] = useState(false);
-
 const Main = (): JSX.Element => {
+    const [isShow, setIsShow] = useState(false);
+
     return (
         <div className={styles.BackgroundBlur}>
             <Header/>
@@ -16,12 +16,25 @@ const Main = (): JSX.Element => {
                 <div className={styles.FirstBlock}>
                     <SBox>
                         <div className={styles.ButtonsWrapper}>
-                            <FBoxButtons name="Лазеры"/>
-                            <FBoxButtons name="Лазерные модули"/>
-                            <FBoxButtons name="Модули обработки информации"/>
-                            <FBoxButtons name="Источники питания и управления"/>
+                            <FBoxButtons
+                                name="Лазеры"
+                                hover={isShow}
+                            />
+                            <FBoxButtons
+                                name="Лазерные модули"
+                                hover={isShow}
+                            />
+                            <FBoxButtons
+                                name="Модули обработки информации"
+                                hover={isShow}
+                            />
+                            <FBoxButtons
+                                name="Источники питания и управления"
+                                hover={isShow}
+                            />
                         </div>
                         <div className={styles.Line}></div>
+                        {isShow ? (<div>adjsakdjalkdjlaksdjalksdjalsdlk</div>) : ''}
                     </SBox>
                 </div>
             </div>
