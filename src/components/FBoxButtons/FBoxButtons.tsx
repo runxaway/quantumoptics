@@ -6,21 +6,22 @@ type FBoxButtonsProps = {
     name: string;
     href?: string;
     hover: any;
+    sendName: any;
 }
 
 export function FBoxButtons(props: FBoxButtonsProps) {
     const [isHover, setIsHover] = useState(false);
 
-    const checkFocus = (focus: any) => {
-        focus ? setIsHover(true) : setIsHover(false);
-        props.hover(focus);
-        console.log(focus, isHover)
+    const checkFocus = () => {
+        // !isHover ? setIsHover(true) : setIsHover(false);
+        // props.hover(isHover);
+        props.sendName(props.name);
     }
 
     return (
         <div
             className={styles.Box}
-            onClick={checkFocus}
+            onMouseEnter={checkFocus}
         >
             <div className={styles.ButtonName}>
                 {props.name}
