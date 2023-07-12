@@ -3,19 +3,16 @@ import React, { BaseSyntheticEvent, useState } from "react";
 import styles from './FBoxButtons.module.scss';
 
 type FBoxButtonsProps = {
+    id: number;
     name: string;
     href?: string;
     hover: any;
-    sendName: any;
 }
 
 export function FBoxButtons(props: FBoxButtonsProps) {
-    const [isHover, setIsHover] = useState(false);
 
     const checkFocus = () => {
-        // !isHover ? setIsHover(true) : setIsHover(false);
-        // props.hover(isHover);
-        props.sendName(props.name);
+        props.hover(true, props.id);
     }
 
     return (

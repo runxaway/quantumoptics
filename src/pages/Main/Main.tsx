@@ -3,64 +3,136 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from './Main.module.scss';
 
 import { Header } from "../../components/Header/Header";
-import { SBox } from "../../components/SBox/SBox";
+import { FBox } from "../../components/FBox/FBox";
 import { FBoxButtons } from "../../components/FBoxButtons/FBoxButtons";
 
 const Main = (): JSX.Element => {
     const production = [
-        'Лазеры',
-        'Лазерные модули',
-        'Модули обработки информации',
-        'Источники питания и управления'
+        {
+            id: 0,
+            productName: 'Лазеры',
+            productText: 'Разработка и изготовление твердотельных лазеров с диодной накачкой, излучающих в широком спектральном диапазоне от УФ (260 нм) до ИК (3 мкм) для лазерных информационных систем, технологических установок и биомедицинской аппаратуры, научных исследований'
+        },
+        {
+            id: 1,
+            productName: 'Лазерные модули',
+            productText: 'Разработка и изготовление лазерных информационных систем, дальномеров, лидаров, оптико-электронных систем наблюдения, лазерных систем дистанционного зондирования, обнаружения малых концентраций веществ'
+        },
+        {
+            id: 2,
+            productName: 'Модули обработки информации',
+            productText: 'Разработка и изготовление приемных каналов оптических информационных систем, средств спектральной селекции, фотоприемных устройств, усилителей, устройств и алгоритмов обработки информации'
+        },
+        {
+            id: 3,
+            productName: 'Источники питания и управления',
+            productText: 'Разработка и изготовление источников питания и управления для твердотельных лазеров с диодной накачкой, термоконтроллеров, драйверов электрооптических и акустооптических модуляторов'
+        },
     ];
 
+    const productionNames = ["#0088FE", "#00C49F", "#FFBB28"];
+
     const [isShow, setIsShow] = useState(false);
-    const [name, setName] = useState('Лазеры');
+    const [id, setId] = useState(-1);
 
-    const handleFocus = (isHover: boolean) => {
-        !isHover ? setIsShow(true) : setIsShow(false);
-        // console.log(isHover);
+    const handleFocus = (isHover: boolean, isId: number) => {
+        setIsShow(isHover);
+        setId(isId);
     };
 
-    const handleName = (isName: string) => {
-        setName(isName);
-        console.log(isName);
-    };
+    let delay = 2500;
+
+    const [index, setIndex] = useState(0);
+    const timeoutRef = useRef(null);
+      
+    function resetTimeout() {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+        }
+    }
+      
+    useEffect(() => {
+        resetTimeout();
+        timeoutRef.current = setTimeout(
+        () =>
+            setIndex((prevIndex) =>
+                prevIndex === productionNames.length - 1 ? 0 : prevIndex + 1
+            ),
+        delay
+        );
+
+        return () => {
+            resetTimeout();
+        };
+    }, [index]);
+    console.log(index);
 
     return (
         <div className={styles.BackgroundBlur}>
             <Header/>
             <div className={styles.Body}>
                 <div className={styles.FirstBlock}>
-                    <SBox>
+                    <FBox>
                         <div className={styles.ButtonsWrapper}>
                             <FBoxButtons
+                                id={0}
                                 name="Лазеры"
                                 hover={handleFocus}
-                                sendName={handleName}
                             />
                             <FBoxButtons
+                                id={1}
                                 name="Лазерные модули"
                                 hover={handleFocus}
-                                sendName={handleName}
                             />
                             <FBoxButtons
+                                id={2}
                                 name="Модули обработки информации"
                                 hover={handleFocus}
-                                sendName={handleName}
                             />
                             <FBoxButtons
+                                id={3}
                                 name="Источники питания и управления"
                                 hover={handleFocus}
-                                sendName={handleName}
                             />
                         </div>
                         <div className={styles.Line}></div>
-                        {name === production[0] ? <div>Лазеры</div> : ''}
-                        {name === production[1] ? <div>Лазерные модули</div> : ''}
-                        {name === production[2] ? <div>Модули обработки информации</div> : ''}
-                        {name === production[3] ? <div>Источники питания и управления</div> : ''}
-                    </SBox>
+                        <div className={styles.SliderContainer}>
+                            <div
+                                className={styles.Slider}
+                                style={{ transform: `translate3d(${-{index} * 100}%, 0, 0)` }}
+                            >
+                                {productionNames.map((backgroundColor, index) => (
+                                    <div
+                                    className={styles.Slide}
+                                    key={index}
+                                    style={{ backgroundColor }}
+                                  ></div>
+                                ))}
+                            </div>
+                            <div className={styles.SlideshowDots}>
+                                {productionNames.map((_, idx) => (
+                                <div
+                                    key={idx}
+                                    className={`${styles.SlideshowDot} ${index === idx ? 'Active' : ''}`}
+                                    onClick={() => {
+                                        setIndex(idx);
+                                    }}
+                                ></div>
+                                ))}
+                            </div>
+                        </div>
+                        {
+                           isShow && id === production[id].id
+                            ? <div className={styles.PopUp}>
+                                <div className={styles.PopUpName}>
+                                    {production[id].productName}
+                                </div>
+                                <div className={styles.PopUpText}>
+                                    {production[id].productText}
+                                </div>
+                            </div> : ''
+                        }
+                    </FBox>
                 </div>
             </div>
         </div>
