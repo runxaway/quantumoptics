@@ -4,7 +4,6 @@ import styles from './Main.module.scss';
 
 import { Header } from "../../components/Header/Header";
 import { FBox } from "../../components/FBox/FBox";
-import { FBoxButtons } from "../../components/FBoxButtons/FBoxButtons";
 
 const Main = (): JSX.Element => {
     const production = [
@@ -30,18 +29,16 @@ const Main = (): JSX.Element => {
         },
     ];
 
-    const productionNames = ['Лазеры', 'Лазерные модули', 'Модули обработки информации', 'Источники питания и управления'];
-
     const [isShow, setIsShow] = useState(false);
-    const [id, setId] = useState(-1);
+    // const [id, setId] = useState(-1);
 
     let delay = 2000;
 
-    const handleFocus = (isHover: boolean, isId: number) => {
-        setIsShow(isHover);
-        setId(isId);
-        setIndex(isId);
-    };
+    // const handleFocus = (isHover: boolean, isId: number) => {
+    //     setIsShow(isHover);
+    //     setId(isId);
+    //     setIndex(isId);
+    // };
 
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(0);
@@ -74,26 +71,23 @@ const Main = (): JSX.Element => {
                 <div className={styles.FirstBlock}>
                     <FBox>
                         <div className={styles.ButtonsWrapper}>
-                            <FBoxButtons
-                                id={0}
-                                name="Лазеры"
-                                hover={handleFocus}
-                            />
-                            <FBoxButtons
-                                id={1}
-                                name="Лазерные модули"
-                                hover={handleFocus}
-                            />
-                            <FBoxButtons
-                                id={2}
-                                name="Модули обработки информации"
-                                hover={handleFocus}
-                            />
-                            <FBoxButtons
-                                id={3}
-                                name="Источники питания и управления"
-                                hover={handleFocus}
-                            />
+                            {production.map((obj, i) => {
+                                return (
+                                    <div
+                                        key={obj.id}
+                                        className={index === i ? styles.BoxActive : styles.Box}
+                                        onMouseEnter={() => {
+                                            setIndex(i);
+                                            setIsShow(true);
+                                        }}
+                                        onMouseLeave={() => setIsShow(false)}
+                                    >
+                                        <div className={styles.ButtonName}>
+                                            {obj.productName}
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                         <div className={styles.Line}></div>
                         <div className={styles.SliderContainer}>
@@ -140,13 +134,13 @@ const Main = (): JSX.Element => {
                             </div>
                         </div> */}
                         {
-                           isShow && id === production[id].id
-                            ? <div className={styles.PopUp}>
+                            index === production[index].id
+                            ? <div className={isShow ? styles.PopUpActive : styles.PopUp}>
                                 <div className={styles.PopUpName}>
-                                    {production[id].productName}
+                                    {production[index].productName}
                                 </div>
                                 <div className={styles.PopUpText}>
-                                    {production[id].productText}
+                                    {production[index].productText}
                                 </div>
                             </div> : ''
                         }

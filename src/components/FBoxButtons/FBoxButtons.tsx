@@ -10,14 +10,13 @@ type FBoxButtonsProps = {
 }
 
 export function FBoxButtons(props: FBoxButtonsProps) {
-
     const checkFocus = () => {
         props.hover(true, props.id);
     }
 
     return (
         <div
-            className={styles.Box}
+            className={styles.BoxActive}
             onMouseEnter={checkFocus}
         >
             <div className={styles.ButtonName}>
