@@ -34,9 +34,6 @@
             overflow: hidden;
             position: relative;
 
-            // background-color: red;
-            // opacity: 0.2;
-
             .Slide {
                 width: 100%;
                 height: 100%;
@@ -44,7 +41,7 @@
                 object-fit: cover;
     
                 opacity: 0;
-                transition: opacity ease-out 1s;
+                transition: opacity ease-out 700ms;
             }
 
             .Slide img {
@@ -54,46 +51,11 @@
             }
 
             .SlideActive {
+                transition: opacity ease-in 700ms;
                 opacity: 1;
             }
     
         }
-
-        // .Slider {
-        //     white-space: nowrap;
-        //     transition: ease 1000ms;
-
-        //     .Slide {
-        //         display: inline-block;
-              
-        //         height: 40px;
-        //         width: 100%;
-        //         border-radius: 40px;
-        //         opacity: 0;
-
-        //         transition: opacity ease-in-out 400ms;
-        //       }
-        // }
-
-        // .SlideshowDots {
-        //     text-align: center;
-
-        //     .SlideshowDot {
-        //         display: inline-block;
-        //         height: 20px;
-        //         width: 20px;
-        //         border-radius: 50%;
-
-        //         cursor: pointer;
-        //         margin: 15px 7px 0px;
-
-        //         background-color: #c4c4c4;
-
-        //         &.Active {
-        //             background-color: #6a0dad;
-        //         }
-        //     }
-        // }
 
         .PopUp {
             margin-left: 861px;

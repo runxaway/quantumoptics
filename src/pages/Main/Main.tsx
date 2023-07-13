@@ -35,12 +35,13 @@ const Main = (): JSX.Element => {
     const [isShow, setIsShow] = useState(false);
     const [id, setId] = useState(-1);
 
+    let delay = 2000;
+
     const handleFocus = (isHover: boolean, isId: number) => {
         setIsShow(isHover);
         setId(isId);
+        setIndex(isId);
     };
-
-    let delay = 2000;
 
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(0);
@@ -65,7 +66,6 @@ const Main = (): JSX.Element => {
             resetTimeout();
         };
     }, [index]);
-    console.log(index);
 
     return (
         <div className={styles.BackgroundBlur}>
