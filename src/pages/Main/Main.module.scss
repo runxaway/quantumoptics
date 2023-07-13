@@ -41,7 +41,7 @@
                 object-fit: cover;
     
                 opacity: 0;
-                transition: opacity ease-out 700ms;
+                transition: opacity ease 1s;
             }
 
             .Slide img {
@@ -51,7 +51,7 @@
             }
 
             .SlideActive {
-                transition: opacity ease-in 700ms;
+                transition: opacity ease 1s;
                 opacity: 1;
             }
     
@@ -69,7 +69,6 @@
             background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
             box-shadow: -2px -2px 15px 0px rgba(0, 0, 0, 0.10);
             position: absolute;
-            // display: flex;
             backdrop-filter: blur(15px);
             z-index: 4;
             box-sizing: border-box;
