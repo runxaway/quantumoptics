@@ -30,7 +30,7 @@ const Main = (): JSX.Element => {
         },
     ];
 
-    const productionNames = ["#0088FE", "#00C49F", "#FFBB28"];
+    const productionNames = ['Лазеры', 'Лазерные модули', 'Модули обработки информации', 'Источники питания и управления'];
 
     const [isShow, setIsShow] = useState(false);
     const [id, setId] = useState(-1);
@@ -40,10 +40,10 @@ const Main = (): JSX.Element => {
         setId(isId);
     };
 
-    let delay = 2500;
+    let delay = 2000;
 
     const [index, setIndex] = useState(0);
-    const timeoutRef = useRef(null);
+    const timeoutRef = useRef(0);
       
     function resetTimeout() {
         if (timeoutRef.current) {
@@ -53,10 +53,10 @@ const Main = (): JSX.Element => {
       
     useEffect(() => {
         resetTimeout();
-        timeoutRef.current = setTimeout(
+        timeoutRef.current = window.setTimeout(
         () =>
-            setIndex((prevIndex) =>
-                prevIndex === productionNames.length - 1 ? 0 : prevIndex + 1
+            setIndex(
+                index === production.length - 1 ? 0 : index + 1
             ),
         delay
         );
@@ -97,9 +97,27 @@ const Main = (): JSX.Element => {
                         </div>
                         <div className={styles.Line}></div>
                         <div className={styles.SliderContainer}>
+                            {production.map((obj, i) => {
+                                return (
+                                    <div
+                                        key={obj.id}
+                                        className={index === i ?
+                                            styles.SlideActive :
+                                            styles.Slide
+                                        }
+                                    >
+                                        <img
+                                            src={`../../images/production/prod${i}.jpg`}
+                                        />
+                                    </div>
+                                );
+                            })}
+
+                        </div>
+                        {/* <div className={styles.SliderContainer}>
                             <div
                                 className={styles.Slider}
-                                style={{ transform: `translate3d(${-{index} * 100}%, 0, 0)` }}
+                                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
                             >
                                 {productionNames.map((backgroundColor, index) => (
                                     <div
@@ -120,7 +138,7 @@ const Main = (): JSX.Element => {
                                 ></div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                         {
                            isShow && id === production[id].id
                             ? <div className={styles.PopUp}>
