@@ -4,6 +4,7 @@ import styles from './Main.module.scss';
 
 import { Header } from "../../components/Header/Header";
 import { FBox } from "../../components/FBox/FBox";
+import { SBox } from "../../components/SBox/SBox";
 
 const Main = (): JSX.Element => {
     const production = [
@@ -62,10 +63,10 @@ const Main = (): JSX.Element => {
             <div className={styles.Body}>
                 <div className={styles.FirstBlock}>
                     <FBox>
-                        <div className={styles.ButtonsWrapper}>
+                        <ul className={styles.ButtonsWrapper}>
                             {production.map((obj, i) => {
                                 return (
-                                    <div
+                                    <li
                                         id='btn'
                                         key={obj.id}
                                         className={index === i ? styles.BoxActive : styles.Box}
@@ -78,10 +79,10 @@ const Main = (): JSX.Element => {
                                         <div className={styles.ButtonName}>
                                             {obj.productName}
                                         </div>
-                                    </div>
+                                    </li>
                                 );
                             })}
-                        </div>
+                        </ul>
                         <div className={styles.Line}></div>
                         <div className={styles.SliderContainer}>
                             {production.map((obj, i) => {
@@ -110,6 +111,16 @@ const Main = (): JSX.Element => {
                                 </div>
                             </div>
                     </FBox>
+                </div>
+                <div className={styles.AwardsLabel}>
+                    <div className={styles.Label}>Награды</div>
+                </div>
+                <div className={styles.SecondBlock}>
+                    <SBox>
+                        <div className={styles.AwardsContainer}>
+
+                        </div>
+                    </SBox>
                 </div>
             </div>
         </div>
