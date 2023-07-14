@@ -30,25 +30,17 @@ const Main = (): JSX.Element => {
     ];
 
     const [isShow, setIsShow] = useState(false);
-    // const [id, setId] = useState(-1);
-
-    let delay = 2000;
-
-    // const handleFocus = (isHover: boolean, isId: number) => {
-    //     setIsShow(isHover);
-    //     setId(isId);
-    //     setIndex(isId);
-    // };
-
     const [index, setIndex] = useState(0);
+
+    let delay = isShow ? 8000 : 4000;
     const timeoutRef = useRef(0);
-      
+
     function resetTimeout() {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
         }
     }
-      
+
     useEffect(() => {
         resetTimeout();
         timeoutRef.current = window.setTimeout(
@@ -74,9 +66,10 @@ const Main = (): JSX.Element => {
                             {production.map((obj, i) => {
                                 return (
                                     <div
+                                        id='btn'
                                         key={obj.id}
                                         className={index === i ? styles.BoxActive : styles.Box}
-                                        onMouseEnter={() => {
+                                        onMouseOverCapture={() => {
                                             setIndex(i);
                                             setIsShow(true);
                                         }}
@@ -108,42 +101,14 @@ const Main = (): JSX.Element => {
                             })}
 
                         </div>
-                        {/* <div className={styles.SliderContainer}>
-                            <div
-                                className={styles.Slider}
-                                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-                            >
-                                {productionNames.map((backgroundColor, index) => (
-                                    <div
-                                    className={styles.Slide}
-                                    key={index}
-                                    style={{ backgroundColor }}
-                                  ></div>
-                                ))}
-                            </div>
-                            <div className={styles.SlideshowDots}>
-                                {productionNames.map((_, idx) => (
-                                <div
-                                    key={idx}
-                                    className={`${styles.SlideshowDot} ${index === idx ? 'Active' : ''}`}
-                                    onClick={() => {
-                                        setIndex(idx);
-                                    }}
-                                ></div>
-                                ))}
-                            </div>
-                        </div> */}
-                        {
-                            index === production[index].id
-                            ? <div className={isShow ? styles.PopUpActive : styles.PopUp}>
+                        <div className={isShow ? styles.PopUpActive : styles.PopUp}>
                                 <div className={styles.PopUpName}>
                                     {production[index].productName}
                                 </div>
                                 <div className={styles.PopUpText}>
                                     {production[index].productText}
                                 </div>
-                            </div> : ''
-                        }
+                            </div>
                     </FBox>
                 </div>
             </div>
