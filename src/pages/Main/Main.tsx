@@ -29,11 +29,21 @@ const Main = (): JSX.Element => {
             productText: 'Разработка и изготовление источников питания и управления для твердотельных лазеров с диодной накачкой, термоконтроллеров, драйверов электрооптических и акустооптических модуляторов'
         },
     ];
+    const awards = Array(6).fill(0);
+    const awardsBox = document.querySelector(`.${styles.AwardsContainer}`);
+    // console.log(awardsBox);
+    
+    const dragging = (e: any) => {
+        console.log('dragging');
+        awardsBox!.scrollLeft -= e.movementX;
+    }
+
+    awardsBox?.addEventListener("mousemove", dragging);
 
     const [isShow, setIsShow] = useState(false);
     const [index, setIndex] = useState(0);
 
-    let delay = isShow ? 8000 : 4000;
+    let delay = isShow ? 7000 : 2500;
     const timeoutRef = useRef(0);
 
     function resetTimeout() {
@@ -117,9 +127,21 @@ const Main = (): JSX.Element => {
                 </div>
                 <div className={styles.SecondBlock}>
                     <SBox>
-                        <div className={styles.AwardsContainer}>
-
-                        </div>
+                        <ul className={styles.AwardsContainer}>
+                            {awards.map((_,i) => {
+                                return (
+                                    <li
+                                        key={i}
+                                        className={styles.Award}
+                                    >
+                                        <img
+                                            src={`../../images/awards/award${i + 1}.jpg`}
+                                        />
+                                    </li>
+                                );
+                            })}
+                            <li></li>
+                        </ul>
                     </SBox>
                 </div>
             </div>

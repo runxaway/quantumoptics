@@ -391,12 +391,21 @@
 
     .SecondBlock {
         padding: 20px 91px;
-        position: relative;
 
         .AwardsContainer {
             width: 1118px;
             height: 265px;
             margin: 29px 72px;
+            display: flex;
+            overflow: hidden;
+            justify-content: space-evenly;
+            overflow-x: hidden;
+            list-style: none;
+            position: relative;
+
+            .Award img {
+                padding: 0px 40px;
+            }
         }
     }
 }
