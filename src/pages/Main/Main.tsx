@@ -5,30 +5,9 @@ import styles from './Main.module.scss';
 import { Header } from "../../components/Header/Header";
 import { FBox } from "../../components/FBox/FBox";
 import { SBox } from "../../components/SBox/SBox";
+import { Slider } from "../../components/Slider/Slider";
 
 const Main = (): JSX.Element => {
-    const production = [
-        {
-            id: 0,
-            productName: 'Лазеры',
-            productText: 'Разработка и изготовление твердотельных лазеров с диодной накачкой, излучающих в широком спектральном диапазоне от УФ (260 нм) до ИК (3 мкм) для лазерных информационных систем, технологических установок и биомедицинской аппаратуры, научных исследований'
-        },
-        {
-            id: 1,
-            productName: 'Лазерные модули',
-            productText: 'Разработка и изготовление лазерных информационных систем, дальномеров, лидаров, оптико-электронных систем наблюдения, лазерных систем дистанционного зондирования, обнаружения малых концентраций веществ'
-        },
-        {
-            id: 2,
-            productName: 'Модули обработки информации',
-            productText: 'Разработка и изготовление приемных каналов оптических информационных систем, средств спектральной селекции, фотоприемных устройств, усилителей, устройств и алгоритмов обработки информации'
-        },
-        {
-            id: 3,
-            productName: 'Источники питания и управления',
-            productText: 'Разработка и изготовление источников питания и управления для твердотельных лазеров с диодной накачкой, термоконтроллеров, драйверов электрооптических и акустооптических модуляторов'
-        },
-    ];
     const awards = Array(6).fill(0);
     const arrows = document.querySelector(`.${styles.Arrow}`) as any as Array<HTMLElement>;
     const awardsBox = document.querySelector(`.${styles.AwardsContainer}`);
@@ -42,7 +21,7 @@ const Main = (): JSX.Element => {
         });
     }
 
-    // console.log(arrows);
+    console.log(arrows);
     
     // const dragging = (e: any) => {
     //     console.log('dragging');
@@ -51,32 +30,31 @@ const Main = (): JSX.Element => {
 
     // awardsBox?.addEventListener("mousemove", dragging);
 
-    const [isShow, setIsShow] = useState(false);
-    const [index, setIndex] = useState(0);
+    // const [isShow, setIsShow] = useState(false);
 
-    let delay = isShow ? 7000 : 2500;
-    const timeoutRef = useRef(0);
+    // let delay = isShow ? 7000 : 2500;
+    // const timeoutRef = useRef(0);
 
-    function resetTimeout() {
-        if (timeoutRef.current) {
-            clearTimeout(timeoutRef.current);
-        }
-    }
+    // function resetTimeout() {
+    //     if (timeoutRef.current) {
+    //         clearTimeout(timeoutRef.current);
+    //     }
+    // }
 
-    useEffect(() => {
-        resetTimeout();
-        timeoutRef.current = window.setTimeout(
-        () =>
-            setIndex(
-                index === production.length - 1 ? 0 : index + 1
-            ),
-        delay
-        );
+    // useEffect(() => {
+    //     resetTimeout();
+    //     timeoutRef.current = window.setTimeout(
+    //     () =>
+    //         setIndex(
+    //             index === production.length - 1 ? 0 : index + 1
+    //         ),
+    //     delay
+    //     );
 
-        return () => {
-            resetTimeout();
-        };
-    }, [index]);
+    //     return () => {
+    //         resetTimeout();
+    //     };
+    // }, [index]);
 
     return (
         <div className={styles.BackgroundBlur}>
@@ -84,7 +62,8 @@ const Main = (): JSX.Element => {
             <div className={styles.Body}>
                 <div className={styles.FirstBlock}>
                     <FBox>
-                        <ul className={styles.ButtonsWrapper}>
+                        <Slider />
+                        {/* <ul className={styles.ButtonsWrapper}>
                             {production.map((obj, i) => {
                                 return (
                                     <li
@@ -104,8 +83,8 @@ const Main = (): JSX.Element => {
                                 );
                             })}
                         </ul>
-                        <div className={styles.Line}></div>
-                        <div className={styles.SliderContainer}>
+                        <div className={styles.Line}></div> */}
+                        {/* <div className={styles.SliderContainer}>
                             {production.map((obj, i) => {
                                 return (
                                     <div
@@ -121,16 +100,15 @@ const Main = (): JSX.Element => {
                                     </div>
                                 );
                             })}
-
-                        </div>
-                        <div className={isShow ? styles.PopUpActive : styles.PopUp}>
-                                <div className={styles.PopUpName}>
-                                    {production[index].productName}
-                                </div>
-                                <div className={styles.PopUpText}>
-                                    {production[index].productText}
-                                </div>
+                        </div> */}
+                        {/* <div className={isShow ? styles.PopUpActive : styles.PopUp}>
+                            <div className={styles.PopUpName}>
+                                {production[index].productName}
                             </div>
+                            <div className={styles.PopUpText}>
+                                {production[index].productText}
+                            </div>
+                        </div> */}
                     </FBox>
                 </div>
                 <div className={styles.AwardsLabel}>

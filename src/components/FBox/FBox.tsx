@@ -3,7 +3,7 @@ import React from "react";
 import styles from './FBox.module.scss'
 
 type SBoxProps = {
-    children?: React.ReactChild[];
+    children?: React.ReactChild;
 }
 
 export function FBox({children}: SBoxProps): JSX.Element {
