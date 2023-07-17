@@ -28,7 +28,8 @@ export function Slider(): JSX.Element {
 
     const [isShow, setIsShow] = useState(false);
     const [index, setIndex] = useState(0);
-    let delay = isShow ? 7000 : 2500;
+    const [delay, setDelay] = useState(2500);
+
     const timeoutRef = useRef(0);
 
     function resetTimeout() {
@@ -53,7 +54,7 @@ export function Slider(): JSX.Element {
     }, [index]);
 
     return (
-        <>
+        <div className={styles.BorderBox}>
         <ul className={styles.ButtonsWrapper}>
             {production.map((obj, i) => {
                 return (
@@ -64,8 +65,12 @@ export function Slider(): JSX.Element {
                         onMouseOverCapture={() => {
                             setIndex(i);
                             setIsShow(true);
+                            setDelay(7000);
                         }}
-                        onMouseLeave={() => setIsShow(false)}
+                        onMouseLeave={() => {
+                            setIsShow(false);
+                            setDelay(2500);
+                        }}
                     >
                         <div className={styles.ButtonName}>
                             {obj.productName}
@@ -100,6 +105,6 @@ export function Slider(): JSX.Element {
                 {production[index].productText}
             </div>
         </div>
-    </>
+    </div>
     );
 }

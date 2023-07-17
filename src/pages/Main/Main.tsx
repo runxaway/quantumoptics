@@ -9,17 +9,15 @@ import { Slider } from "../../components/Slider/Slider";
 
 const Main = (): JSX.Element => {
     const awards = Array(6).fill(0);
-    const arrows = document.querySelector(`.${styles.Arrow}`) as any as Array<HTMLElement>;
+    const arrows = document.querySelectorAll(`.${styles.Arrow}`) as any as Array<HTMLElement>;
     const awardsBox = document.querySelector(`.${styles.AwardsContainer}`);
 
-    if (arrows !== null) {
-        arrows.forEach(icon => {
+        arrows!.forEach(icon => {
             icon.addEventListener('click', () => {
                 console.log(icon.id);
                 // awardsBox!.scrollLeft += icon.id === 'left' ? -350 : 350;
             })
         });
-    }
 
     console.log(arrows);
     
@@ -29,87 +27,13 @@ const Main = (): JSX.Element => {
     // }
 
     // awardsBox?.addEventListener("mousemove", dragging);
-
-    // const [isShow, setIsShow] = useState(false);
-
-    // let delay = isShow ? 7000 : 2500;
-    // const timeoutRef = useRef(0);
-
-    // function resetTimeout() {
-    //     if (timeoutRef.current) {
-    //         clearTimeout(timeoutRef.current);
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     resetTimeout();
-    //     timeoutRef.current = window.setTimeout(
-    //     () =>
-    //         setIndex(
-    //             index === production.length - 1 ? 0 : index + 1
-    //         ),
-    //     delay
-    //     );
-
-    //     return () => {
-    //         resetTimeout();
-    //     };
-    // }, [index]);
-
+    
     return (
         <div className={styles.BackgroundBlur}>
             <Header/>
             <div className={styles.Body}>
                 <div className={styles.FirstBlock}>
-                    <FBox>
-                        <Slider />
-                        {/* <ul className={styles.ButtonsWrapper}>
-                            {production.map((obj, i) => {
-                                return (
-                                    <li
-                                        id='btn'
-                                        key={obj.id}
-                                        className={index === i ? styles.BoxActive : styles.Box}
-                                        onMouseOverCapture={() => {
-                                            setIndex(i);
-                                            setIsShow(true);
-                                        }}
-                                        onMouseLeave={() => setIsShow(false)}
-                                    >
-                                        <div className={styles.ButtonName}>
-                                            {obj.productName}
-                                        </div>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                        <div className={styles.Line}></div> */}
-                        {/* <div className={styles.SliderContainer}>
-                            {production.map((obj, i) => {
-                                return (
-                                    <div
-                                        key={obj.id}
-                                        className={index === i ?
-                                            styles.SlideActive :
-                                            styles.Slide
-                                        }
-                                    >
-                                        <img
-                                            src={`../../images/production/prod${i}.jpg`}
-                                        />
-                                    </div>
-                                );
-                            })}
-                        </div> */}
-                        {/* <div className={isShow ? styles.PopUpActive : styles.PopUp}>
-                            <div className={styles.PopUpName}>
-                                {production[index].productName}
-                            </div>
-                            <div className={styles.PopUpText}>
-                                {production[index].productText}
-                            </div>
-                        </div> */}
-                    </FBox>
+                    <Slider />
                 </div>
                 <div className={styles.AwardsLabel}>
                     <div className={styles.Label}>Награды</div>
