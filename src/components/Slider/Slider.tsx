@@ -2,30 +2,17 @@ import React, { useRef, useState, useEffect } from "react";
 
 import styles from './Slider.module.scss'
 
-export function Slider(): JSX.Element {
-    const production = [
+type SliderProps = {
+    arr: 
         {
-            id: 0,
-            productName: 'Лазеры',
-            productText: 'Разработка и изготовление твердотельных лазеров с диодной накачкой, излучающих в широком спектральном диапазоне от УФ (260 нм) до ИК (3 мкм) для лазерных информационных систем, технологических установок и биомедицинской аппаратуры, научных исследований'
-        },
-        {
-            id: 1,
-            productName: 'Лазерные модули',
-            productText: 'Разработка и изготовление лазерных информационных систем, дальномеров, лидаров, оптико-электронных систем наблюдения, лазерных систем дистанционного зондирования, обнаружения малых концентраций веществ'
-        },
-        {
-            id: 2,
-            productName: 'Модули обработки информации',
-            productText: 'Разработка и изготовление приемных каналов оптических информационных систем, средств спектральной селекции, фотоприемных устройств, усилителей, устройств и алгоритмов обработки информации'
-        },
-        {
-            id: 3,
-            productName: 'Источники питания и управления',
-            productText: 'Разработка и изготовление источников питания и управления для твердотельных лазеров с диодной накачкой, термоконтроллеров, драйверов электрооптических и акустооптических модуляторов'
-        },
-    ];
+        id: number,
+        productName: string,
+        productText: string,
+        }[]
+    ;
+}
 
+export function Slider(props: SliderProps): JSX.Element {
     const [isShow, setIsShow] = useState(false);
     const [index, setIndex] = useState(0);
     const [delay, setDelay] = useState(2500);
@@ -43,7 +30,7 @@ export function Slider(): JSX.Element {
         timeoutRef.current = window.setTimeout(
         () =>
             setIndex(
-                index === production.length - 1 ? 0 : index + 1
+                index === props.arr.length - 1 ? 0 : index + 1
             ),
         delay
         );
@@ -56,7 +43,7 @@ export function Slider(): JSX.Element {
     return (
         <div className={styles.BorderBox}>
         <ul className={styles.ButtonsWrapper}>
-            {production.map((obj, i) => {
+            {props.arr.map((obj, i) => {
                 return (
                     <li
                         id='btn'
@@ -81,7 +68,7 @@ export function Slider(): JSX.Element {
         </ul>
         <div className={styles.Line}></div>
         <div className={styles.SliderContainer}>
-            {production.map((obj, i) => {
+            {props.arr.map((obj, i) => {
                 return (
                     <div
                         key={obj.id}
@@ -99,10 +86,10 @@ export function Slider(): JSX.Element {
         </div>
         <div className={isShow ? styles.PopUpActive : styles.PopUp}>
             <div className={styles.PopUpName}>
-                {production[index].productName}
+                {props.arr[index].productName}
             </div>
             <div className={styles.PopUpText}>
-                {production[index].productText}
+                {props.arr[index].productText}
             </div>
         </div>
     </div>

@@ -35,4 +35,39 @@
         -webkit-mask-composite: xor;
         mask-composite: exclude;
     }
+
+    .AwardsContainer {
+        width: 1118px;
+        height: 265px;
+        margin: 29px 15px;
+        display: flex;
+        overflow: hidden;
+        overflow-x: hidden;
+        justify-content: space-evenly;
+        list-style: none;
+        position: relative;
+
+        .Award {
+            margin: 0px 40px;
+            cursor: pointer;
+        }
+    }
+
+    .Arrow {
+        width: 35px;
+        height: 35px;
+        margin-top: 143px;
+        margin-right: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+        transition: all ease 300ms;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
 }
