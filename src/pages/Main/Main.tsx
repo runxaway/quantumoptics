@@ -43,6 +43,7 @@ const Main = (): JSX.Element => {
                 <div className={styles.SecondBlock}>
                     <AwardsSlider arrN={6} />
                 </div>
+                <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
             </div>
         </div>
     );

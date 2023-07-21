@@ -9,7 +9,8 @@ type AwardsSliderProps = {
 export function AwardsSlider(props: AwardsSliderProps): JSX.Element {
     return (
         <div className={styles.BorderBox}>
-            <div className={styles.Layer}></div>
+            <div className={styles.LayerLeft}></div>
+            <div className={styles.LayerRight}></div>
             <ul className={styles.AwardsContainer}>
                 {Array.from(Array(props.arrN).keys()).map((i) => {
                     return (
