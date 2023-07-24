@@ -78,6 +78,7 @@ export function Slider(props: SliderProps): JSX.Element {
                             }
                     >
                         <img
+                            className={styles.Image}
                             src={`../../images/production/prod${i}.jpg`}
                         />
                     </div>

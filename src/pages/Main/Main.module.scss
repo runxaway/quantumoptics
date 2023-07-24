@@ -1,14 +1,18 @@
 .BackgroundBlur {
     background-image: url('../../images/Blur.png');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    // height: 100vh;
 }
 
 .Body {
-    padding-top: 115px;
+    // padding-top: 115px;
+    padding-top: 15.667vh;
 
     .FirstBlock {
-        padding: 0px 203px;
+        // padding: 0px 203px;
+        padding: 0 14.0972vw;
     }
 
     .AwardsLabel {
