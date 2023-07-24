@@ -17,6 +17,7 @@ export function AwardsSlider(props: AwardsSliderProps): JSX.Element {
                             className={styles.Award}
                         >
                             <img
+                                className={styles.AwardImage}
                                 src={`../../images/awards/award${i + 1}.jpg`}
                             />
                         </li>

@@ -2,12 +2,12 @@
     color: white;
     // width: 1032px;
     // height: 340px;
-    height: 46.321vh;
+    height: 23.61111vw;
     // border-radius: 15px;
-    border-radius: 2.0435vh;
+    border-radius: 1.041666vw;
     background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
     // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
-    box-shadow: 0.272vh 0.1388vw 0.681vh 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0.1388vw 0.1388vw 0.3472vw 0 rgba(0, 0, 0, 0.10);
     position: relative;
     display: flex;
 
@@ -15,12 +15,12 @@
         content: "";
         position: absolute;
         // inset: calc(-1px);
-        inset: calc(-0.1362397820163488vh);
+        inset: calc(-0.06944444444444445vw);
         
         // border-radius: 16px;
-        border-radius: 2.179vh;
+        border-radius: 1.1111111111111112vw;
         // padding: 1px;
-        padding: 0.1362397820163488vh 0.06944444444444445vw;
+        padding: 0.06944444444444445vw;
         background: linear-gradient(100deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0));
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -32,12 +32,12 @@
         content: "";
         position: absolute;
         // inset: calc(-1px);
-        inset: calc(-0.1362397820163488vh);
+        inset: calc(-0.06944444444444445vw);
         
         // border-radius: 16px;
-        border-radius: 2.179vh;
+        border-radius: 1.1111111111111112vw;
         // padding: 1px;
-        padding: 0.1362397820163488vh 0.06944444444444445vw;
+        padding: 0.06944444444444445vw;
         background: linear-gradient(-20deg, rgb(255, 255, 255, 0.30), rgb(255, 255, 255, 0));
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -47,25 +47,25 @@
 
     .ButtonsWrapper {
         // padding-top: 38px;
-        padding-top: 5.1771vh;
+        padding-top: 2.63888vw;
         // padding-left: 66px;
         padding-left: 4.583vw;
         // padding-bottom: 18px;
-        padding-bottom: 2.452vh;
+        padding-bottom: 1.25vw;
 
         .Box {
             position: relative;
             // margin-bottom: 20px;
-            margin-bottom: 2.7247vh;
+            margin-bottom: 1.38888vw;
             // width: 385px;
             width: 26.7361vw;
             // height: 51px;
-            height: 6.948vh;
+            height: 3.5416vw;
             // border-radius: 10px;
-            border-radius: 1.3623vh;
+            border-radius: 0.69444vw;
             background: linear-gradient(0deg, rgba(217, 217, 217, 0.25), rgba(217, 217, 217, 0.03));
             // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
-            box-shadow: 0.272vh 0.1388vw 0.544vh 0 rgba(0, 0, 0, 0.10);
+            box-shadow: 0.1388vw 0.1388vw 0.2777vw 0 rgba(0, 0, 0, 0.10);
             cursor: pointer;
             color: rgba(255, 255, 255, 0.70);
             
@@ -73,13 +73,13 @@
                 content: "";
                 position: absolute;
                 // inset: calc(-1px);
-                inset: calc(-0.1362397820163488vh);
+                inset: calc(-0.06944vw);
                 transition: opacity 700ms ease;
                 
                 // border-radius: 11px;
-                border-radius: 1.4986vh;
+                border-radius: 0.76388vw;
                 // padding: 1px;
-                padding: 0.1362397820163488vh 0.06944444444444445vw;
+                padding: 0.06944444444444445vw;
                 background: linear-gradient(0deg, rgb(255, 255, 255, 0.35), rgb(255, 255, 255, 0.1));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -89,7 +89,7 @@
 
             &::after {
                 // border-radius: 10px;
-                border-radius: 1.3623vh;
+                border-radius: 0.69444vw;
                 position: absolute;
                 content: "";
                 inset: 0;
@@ -102,13 +102,13 @@
                 // min-width: 84px;
                 min-width: 5.8333vw;
                 // height: 29px;
-                height: 3.9509vh;
+                height: 2.013888vw;
                 // padding-top: 11px;
-                padding-top: 1.498vh;
+                padding-top: 0.76388vw;
                 text-align: center;
                 font-family: Helvetica Neue;
                 // font-size: 24px;
-                font-size: 3.269vh;
+                font-size: 1.6666vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
@@ -118,16 +118,16 @@
         .BoxActive {
             position: relative;
             // margin-bottom: 20px;
-            margin-bottom: 2.724vh;
+            margin-bottom: 1.3888vw;
             // width: 385px;
             width: 26.7361vw;
             // height: 51px;
-            height: 6.948vh;
-            border-radius: 10px;
-            border-radius: 1.3623vh;
+            height: 3.5416vw;
+            // border-radius: 10px;
+            border-radius: 0.69444vw;
             background: linear-gradient(0deg, rgba(217, 217, 217, 0.25), rgba(217, 217, 217, 0.03));
             // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
-            box-shadow: 0.272vh 0.1388vw 0.544vh 0 rgba(0, 0, 0, 0.10);
+            box-shadow: 0.1388vw 0.1388vw 0.27777vw 0 rgba(0, 0, 0, 0.10);
             cursor: pointer;
             color: rgba(255, 255, 255, 1);
             
@@ -135,12 +135,12 @@
                 content: "";
                 position: absolute;
                 // inset: calc(-1px);
-                inset: calc(-0.1362397820163488vh);
+                inset: calc(-0.06944vw);
                 
                 // border-radius: 11px;
-                border-radius: 1.4986vh;
+                border-radius: 0.76388vw;
                 // padding: 1px;
-                padding: 0.1362397820163488vh 0.06944444444444445vw;
+                padding: 0.06944444444444445vw;
                 background: linear-gradient(0deg, rgb(255, 255, 255, 0.55), rgb(255, 255, 255, 0.2));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -151,7 +151,7 @@
         
             &::after {
                 // border-radius: 10px;
-                border-radius: 1.3623vh;
+                border-radius: 0.69444vw;
                 position: absolute;
                 content: "";
                 inset: 0;
@@ -165,13 +165,13 @@
                 // min-width: 84px;
                 min-width: 5.8333vw;
                 // height: 29px;
-                height: 3.9509vh;
+                height: 2.013888vw;
                 // padding-top: 11px;
-                padding-top: 1.498vh;
+                padding-top: 0.76388vw;
                 text-align: center;
                 font-family: Helvetica Neue;
                 // font-size: 24px;
-                font-size: 3.269vh;
+                font-size: 1.66666vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
@@ -183,11 +183,11 @@
         // margin-left: 66px;
         margin-left: 4.583vw;
         // margin-top: 39px;
-        margin-top: 5.3133vh;
+        margin-top: 2.7083vw;
         // width: 1px;
         width: 0.0694vw;
         // height: 263px;
-        height: 35.831vh;
+        height: 18.263vw;
         background: linear-gradient(355deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
     }
 
@@ -196,9 +196,9 @@
         // width: 370px;
         width: 25.6944vw;
         // height: 320px;
-        height: 43.596vh;
+        height: 22.2222vw;
         // margin-top: 12px;
-        margin-top: 1.634vh;
+        margin-top: 0.8333vw;
         // margin-left: 54px;
         margin-left: 3.75vw;
         overflow: hidden;
@@ -228,16 +228,22 @@
     }
 
     .PopUpActive {
-        margin-left: 861px;
-        margin-top: 106px;
+        // margin-left: 861px;
+        margin-left: 59.79166vw;
+        // margin-top: 106px;
+        margin-top: 7.361111vw;
 
-        width: 285px;
-        height: 270px;
+        // width: 285px;
+        width: 19.7916vw;
+        // height: 270px;
+        height: 18.75vw;
         flex-shrink: 0;
         color: rgba(255, 255, 255, 0.90);
-        border-radius: 15px;
+        // border-radius: 15px;
+        border-radius: 1.04166vw;
         background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
-        box-shadow: -2px -2px 15px 0px rgba(0, 0, 0, 0.10);
+        // box-shadow: -2px -2px 15px 0px rgba(0, 0, 0, 0.10);
+        box-shadow: -0.138888vw -0.138888vw 1.0416vw 0 rgba(0, 0, 0, 0.10);
         position: absolute;
         backdrop-filter: blur(15px);
         z-index: 4;
@@ -248,10 +254,12 @@
         &::before {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.06944vw);
             
-            border-radius: 16px;
-            padding: 1px;
+            // border-radius: 16px;
+            border-radius: 1.1111vw;
+            // padding: 1px;
+            padding: 0.06944444444444445vw;
             background: linear-gradient(100deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -262,10 +270,12 @@
         &::after {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.06944vw);
             
-            border-radius: 15px;
-            padding: 1px;
+            // border-radius: 15px;
+            border-radius: 1.1111vw;
+            // padding: 1px;
+            padding: 0.06944444444444445vw;
             background: linear-gradient(-20deg, rgb(255, 255, 255, 0.30), rgb(255, 255, 255, 0));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -274,37 +284,43 @@
         }
 
         .PopUpName {
-            margin-top: 25px;
-            margin-left: 25px;
+            // margin-top: 25px;
+            margin-top: 1.736111vw;
+            // margin-left: 25px;
+            margin-left: 1.736111vw;
 
             display: flex;
-            width: 220px;
-            // height: 28.421px;
+            // width: 220px;
+            width: 15.27777vw;
             flex-direction: column;
             justify-content: center;
             flex-shrink: 0;
 
-            color: rgba(255, 255, 255, 0.90);
+            color: rgba(255, 255, 255, 0.80);
             font-family: Helvetica Neue;
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 1.6666vw;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
         }
 
         .PopUpText {
-            margin-top: 16px;
-            margin-left: 25px;
+            // margin-top: 16px;
+            margin-top: 1.1111vw;
+            // margin-left: 25px;
+            margin-left: 1.7361vw;
 
-            color: rgba(255, 255, 255, 0.90);
+            color: rgba(255, 255, 255, 0.80);
             font-family: Helvetica Neue;
-            font-size: 14px;
+            // font-size: 14px;
+            font-size: 0.97222vw;
             font-style: normal;
             font-weight: 300;
             line-height: 139.4%;
             display: flex;
-            width: 235px;
-            // height: 178.105px;
+            // width: 235px;
+            width: 16.3194vw;
             flex-direction: column;
             justify-content: center;
             flex-shrink: 0;
@@ -312,16 +328,22 @@
     }
 
     .PopUp {
-        margin-left: 861px;
-        margin-top: 106px;
+        // margin-left: 861px;
+        margin-left: 59.79166vw;
+        // margin-top: 106px;
+        margin-top: 7.361111vw;
 
-        width: 285px;
-        height: 270px;
+        // width: 285px;
+        width: 19.7916vw;
+        // height: 270px;
+        height: 18.75vw;
         flex-shrink: 0;
-        color: white;
-        border-radius: 15px;
+        color: rgba(255, 255, 255, 0.90);
+        // border-radius: 15px;
+        border-radius: 1.04166vw;
         background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
-        box-shadow: -2px -2px 15px 0px rgba(0, 0, 0, 0.10);
+        // box-shadow: -2px -2px 15px 0px rgba(0, 0, 0, 0.10);
+        box-shadow: -0.138888vw -0.138888vw 1.0416vw 0 rgba(0, 0, 0, 0.10);
         position: absolute;
         backdrop-filter: blur(15px);
         z-index: 4;
@@ -332,10 +354,12 @@
         &::before {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.06944vw);
             
-            border-radius: 16px;
-            padding: 1px;
+            // border-radius: 16px;
+            border-radius: 1.1111vw;
+            // padding: 1px;
+            padding: 0.06944444444444445vw;
             background: linear-gradient(100deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -346,10 +370,12 @@
         &::after {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.06944vw);
             
-            border-radius: 15px;
-            padding: 1px;
+            // border-radius: 15px;
+            border-radius: 1.04166vw;
+            // padding: 1px;
+            padding: 0.06944444444444445vw;
             background: linear-gradient(-20deg, rgb(255, 255, 255, 0.30), rgb(255, 255, 255, 0));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -358,37 +384,43 @@
         }
 
         .PopUpName {
-            margin-top: 25px;
-            margin-left: 25px;
+            // margin-top: 25px;
+            margin-top: 1.736111vw;
+            // margin-left: 25px;
+            margin-left: 1.736111vw;
 
             display: flex;
-            width: 220px;
-            // height: 28.421px;
+            // width: 220px;
+            width: 15.27777vw;
             flex-direction: column;
             justify-content: center;
             flex-shrink: 0;
 
-            color: rgba(255, 255, 255, 0.90);
+            color: rgba(255, 255, 255, 0.80);
             font-family: Helvetica Neue;
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 1.6666vw;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
         }
 
         .PopUpText {
-            margin-top: 16px;
-            margin-left: 25px;
+            // margin-top: 16px;
+            margin-top: 1.1111vw;
+            // margin-left: 25px;
+            margin-left: 1.7361vw;
 
-            color: rgba(255, 255, 255, 0.90);
+            color: rgba(255, 255, 255, 0.80);
             font-family: Helvetica Neue;
-            font-size: 14px;
+            // font-size: 14px;
+            font-size: 0.97222vw;
             font-style: normal;
             font-weight: 300;
             line-height: 139.4%;
             display: flex;
-            width: 235px;
-            // height: 178.105px;
+            // width: 235px;
+            width: 16.3194vw;
             flex-direction: column;
             justify-content: center;
             flex-shrink: 0;
