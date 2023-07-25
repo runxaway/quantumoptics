@@ -1,0 +1,92 @@
+.CardBlock {
+    position: relative;
+    // width: 385px;
+    width: 24.3055vw;
+    // height: 51px;
+    height: 18.541vw;
+    // border-radius: 15px;
+    border-radius: 1.041666vw;
+    background: rgba(255, 255, 255, 0.15);
+    // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0.1388vw 0.1388vw 0.2777vw 0 rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    z-index: 2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        // inset: calc(-1px);
+        inset: calc(-0.06944vw);
+        transition: opacity 700ms ease;
+        
+        // border-radius: 16px;
+        border-radius: 1.111vw;
+        // padding: 1px;
+        padding: 0.06944444444444445vw;
+        background: linear-gradient(0deg, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.2));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    &::after {
+        // border-radius: 15px;
+        border-radius: 1.041666vw;
+        position: absolute;
+        content: "";
+        inset: 0;
+        z-index: 1;
+        opacity: 0;
+        background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    }
+
+    .ProdImageContainer{
+        width: 22.083vw;
+        height: 12.22vw;
+        margin: 1.25vw 1.1111vw 1.1805vw;
+        flex-shrink: 0;
+        border-radius: 0.6944vw;
+        border: 0.06944vw solid rgba(255, 255, 255, 0.40);
+        object-fit: cover;
+        overflow: hidden;
+        justify-content: center;
+        display: flex;
+
+        .ProdImage {
+            opacity: 0.85;
+            height: 12.22vw;
+        }
+    }
+
+    .ProdTextBox {
+        min-width: 7.708vw;
+        height: 2.708vw;
+        margin: 0 1.111vw;
+        border-radius: 0.69444vw;
+        border: 0.0694vw solid rgba(255, 255, 255, 0.30);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0.1388vw 0.1388vw 0.2777vw 0 rgba(0, 0, 0, 0.05);
+        color: rgba(255, 255, 255, 0.80);
+        position: relative;
+        z-index: 2;
+        transition: (border, color, background) ease 500ms;
+    
+        .ProdText {
+            margin: 0.555vw 0;
+            min-width: 4.861vw;
+            height: 1.6666vw;
+            text-align: center;
+            font-family: Helvetica Neue;
+            font-size: 1.388vw;
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+            border: 0.0694vw solid rgba(255, 255, 255, 0.40);
+            background: rgba(255, 255, 255, 0.4);
+        }
+    }
+}

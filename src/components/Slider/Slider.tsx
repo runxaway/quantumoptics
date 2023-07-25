@@ -41,7 +41,7 @@ export function Slider(props: SliderProps): JSX.Element {
     }, [index]);
 
     return (
-        <div className={styles.BorderBox}>
+    <div className={styles.BorderBox}>
         <ul className={styles.ButtonsWrapper}>
             {props.arr.map((obj, i) => {
                 return (
@@ -79,7 +79,7 @@ export function Slider(props: SliderProps): JSX.Element {
                     >
                         <img
                             className={styles.Image}
-                            src={`../../images/production/prod${i}.jpg`}
+                            src={`../../images/homeImages/img${obj.id}.jpg`}
                         />
                     </div>
                 );
