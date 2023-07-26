@@ -46,7 +46,6 @@ export function Slider(props: SliderProps): JSX.Element {
             {props.arr.map((obj, i) => {
                 return (
                     <li
-                        id='btn'
                         key={obj.id}
                         className={index === i ? styles.BoxActive : styles.Box}
                         onMouseOverCapture={() => {

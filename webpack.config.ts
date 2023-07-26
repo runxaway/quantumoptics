@@ -80,7 +80,9 @@ const config: webpack.Configuration = {
     devtool: 'inline-source-map',
     resolve: {
         alias: {
-            'images': path.resolve(__dirname, '/src/images/')
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@constants': path.resolve(__dirname, 'src/constants/'),
+            '@pages': path.resolve(__dirname, 'src/pages/')
         },
         extensions: ['.tsx', '.ts', '.js', '.css', '.scss'],
     },
@@ -89,7 +91,7 @@ const config: webpack.Configuration = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html'
+            template: 'public/index.html'
         }),
         new CopyPlugin({
         patterns: [

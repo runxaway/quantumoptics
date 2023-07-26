@@ -45,6 +45,7 @@ const Products = (): JSX.Element => {
                     {products.map((field, index) => {
                         return (
                             <ProductCard
+                                key={index}
                                 prodId={field.prodId}
                                 prodName={field.prodName}
                                 prodImage={`../../images/production/prod${field.prodId}.jpg`}

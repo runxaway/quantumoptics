@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
+import { ROUTES } from '@constants/Routes';
 
 import styles from './Header.module.scss'
 import { MenuButton } from "../MenuButton/MenuButton";
@@ -6,7 +9,16 @@ import { MenuButton } from "../MenuButton/MenuButton";
 export function Header(): JSX.Element {
     return (
         <div className={styles.HeaderMenu}>
-            <div className={styles.Logo}>Квантовая оптика</div>
+            <div className={styles.Logo}>
+                <Link
+                    key={'home'}
+                    to={{
+                        pathname: ROUTES.HOME.END
+                    }}
+                >
+                    Квантовая оптика
+                </Link>
+            </div>
             <div className={styles.Adress}>
                 <ul>
                     <li>
@@ -17,9 +29,10 @@ export function Header(): JSX.Element {
                     </li>
                 </ul>
             </div>
-            <ul className={styles.MenuButtonWrapper}>
+            <div className={styles.MenuButtonWrapper}>
                 <MenuButton
-                    label="Продукция"
+                    label='Продукция'
+                    href={'products'}
                 />
                 <MenuButton
                     label="Публикации"
@@ -27,7 +40,7 @@ export function Header(): JSX.Element {
                 <MenuButton
                     label="Контакты"
                 />
-            </ul>
+            </div>
         </div>
     );
 }
