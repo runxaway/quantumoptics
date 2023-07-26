@@ -36,9 +36,11 @@ export function Header(): JSX.Element {
                 />
                 <MenuButton
                     label="Публикации"
+                    href={'publications'}
                 />
                 <MenuButton
                     label="Контакты"
+                    href={'contacts'}
                 />
             </div>
         </div>

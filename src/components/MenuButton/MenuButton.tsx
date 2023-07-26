@@ -7,7 +7,7 @@ import styles from './MenuButton.module.scss'
 
 type ButtonProps = {
     label: string;
-    href?: string;
+    href: string;
 };
 
 export function MenuButton(props: ButtonProps): JSX.Element {

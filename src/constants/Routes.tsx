@@ -1,5 +1,7 @@
 export const HOME = '/';
 export const PRODUCTS = '/products';
+export const PUBLICATIONS = '/publications';
+export const CONTACTS = '/contacts';
 
 export const ANY = '/*';
 
@@ -21,6 +23,16 @@ class RouteFactory {
 
     get PRODUCTS() {
         this.tmp_path.push('products');
+        return this;
+    }
+
+    get PUBLICATIONS() {
+        this.tmp_path.push('publications');
+        return this;
+    }
+
+    get CONTACTS() {
+        this.tmp_path.push('contacts');
         return this;
     }
 
