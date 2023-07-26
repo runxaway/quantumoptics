@@ -21,6 +21,18 @@ const Products = (): JSX.Element => {
             prodId: 3,
             prodName: 'Источники питания и управления',
         },
+        // {
+        //     prodId: 4,
+        //     prodName: 'Источники питания и управления',
+        // },
+        // {
+        //     prodId: 5,
+        //     prodName: 'Источники питания и управления',
+        // },
+        // {
+        //     prodId: 6,
+        //     prodName: 'Источники питания и управления',
+        // },
     ];
 
     return (
@@ -41,6 +53,7 @@ const Products = (): JSX.Element => {
                     })}
                 </div>
             </div>
+            <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
         </div>
     );
 }
