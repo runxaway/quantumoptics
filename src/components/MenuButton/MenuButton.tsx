@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import { ROUTES } from '@constants/Routes';
 
@@ -13,7 +13,7 @@ type ButtonProps = {
 export function MenuButton(props: ButtonProps): JSX.Element {
     return (
         <div className={styles.MenuButtonContainer}>
-            <Link
+            <NavLink
                 key={props.href}
                 to={{
                     pathname: ROUTES.$(props.href).END
@@ -22,7 +22,7 @@ export function MenuButton(props: ButtonProps): JSX.Element {
                 <div className={styles.MenuButton}>
                     <div className={styles.ButtonLabel}>{props.label}</div>
                 </div>
-            </Link>
+            </NavLink>
         </div>
     );
 }

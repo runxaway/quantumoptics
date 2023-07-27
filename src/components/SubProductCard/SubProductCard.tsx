@@ -2,13 +2,13 @@ import React from "react";
 
 import styles from './ProductCard.module.scss'
 
-type ProductCardProps = {
+type SubProductCardProps = {
     prodId: string,
     prodName: string,
     prodImage: string;
 };
 
-export function ProductCard(props: ProductCardProps): JSX.Element {
+export function SubProductCard(props: SubProductCardProps): JSX.Element {
     return (
         <div className={styles.CardBlock}>
             <div className={styles.ProdImageContainer}>

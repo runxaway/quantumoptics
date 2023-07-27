@@ -2,17 +2,9 @@ import React, { useRef, useState, useEffect } from "react";
 
 import styles from './Slider.module.scss'
 
-type SliderProps = {
-    arr: 
-        {
-        id: number,
-        productName: string,
-        productText: string,
-        }[]
-    ;
-}
+import data from '../../products.json';
 
-export function Slider(props: SliderProps): JSX.Element {
+export function Slider(): JSX.Element {
     const [isShow, setIsShow] = useState(false);
     const [index, setIndex] = useState(0);
     const [delay, setDelay] = useState(2500);
@@ -30,7 +22,7 @@ export function Slider(props: SliderProps): JSX.Element {
         timeoutRef.current = window.setTimeout(
         () =>
             setIndex(
-                index === props.arr.length - 1 ? 0 : index + 1
+                index === data.Products.length - 1 ? 0 : index + 1
             ),
         delay
         );
@@ -43,10 +35,10 @@ export function Slider(props: SliderProps): JSX.Element {
     return (
     <div className={styles.BorderBox}>
         <ul className={styles.ButtonsWrapper}>
-            {props.arr.map((obj, i) => {
+            {data.Products.map((obj, i) => {
                 return (
                     <li
-                        key={obj.id}
+                        key={obj.productId}
                         className={index === i ? styles.BoxActive : styles.Box}
                         onMouseOverCapture={() => {
                             setIndex(i);
@@ -67,10 +59,10 @@ export function Slider(props: SliderProps): JSX.Element {
         </ul>
         <div className={styles.Line}></div>
         <div className={styles.SliderContainer}>
-            {props.arr.map((obj, i) => {
+            {data.Products.map((obj, i) => {
                 return (
                     <div
-                        key={obj.id}
+                        key={obj.productId}
                             className={index === i ?
                                 styles.SlideActive :
                                 styles.Slide
@@ -78,7 +70,7 @@ export function Slider(props: SliderProps): JSX.Element {
                     >
                         <img
                             className={styles.Image}
-                            src={`../../images/homeImages/img${obj.id}.jpg`}
+                            src={`../../images/homeImages/img${obj.productId}.jpg`}
                         />
                     </div>
                 );
@@ -86,10 +78,10 @@ export function Slider(props: SliderProps): JSX.Element {
         </div>
         <div className={isShow ? styles.PopUpActive : styles.PopUp}>
             <div className={styles.PopUpName}>
-                {props.arr[index].productName}
+                {data.Products[index].productName}
             </div>
             <div className={styles.PopUpText}>
-                {props.arr[index].productText}
+                {data.Products[index].productText}
             </div>
         </div>
     </div>
