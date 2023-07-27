@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-
-import { ROUTES } from '@constants/Routes';
 
 import styles from './Products.module.scss'
 
@@ -19,19 +16,13 @@ const Products = (): JSX.Element => {
                 <div className={styles.ProdContainer}>
                     {data.Products.map((field, index) => {
                         return (
-                            <Link
+                            <ProductCard
                                 key={index}
-                                to={{
-                                    pathname: ROUTES.PRODUCTS.$(field.productId).END
-                                }}
-                            >
-                                <ProductCard
-                                    key={index}
-                                    prodId={field.productId}
-                                    prodName={field.productName}
-                                    prodImage={`../../images/production/prod${field.productId}.jpg`}
-                                />
-                            </Link>
+                                prodId={field.productId}
+                                prodPathName={field.pathName}
+                                prodName={field.productName}
+                                prodImage={`../../images/production/prod${field.productId}.jpg`}
+                            />
                         );
                     })}
                 </div>

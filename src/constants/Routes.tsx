@@ -3,6 +3,11 @@ export const PRODUCTS = '/products';
 export const PUBLICATIONS = '/publications';
 export const CONTACTS = '/contacts';
 
+export const LASERS = '/lasers';
+export const LASERMODULES = '/lasermodules';
+export const IPM = '/ipm';
+export const PCS = '/pcs';
+
 export const ANY = '/*';
 
 class RouteFactory {
@@ -33,6 +38,26 @@ class RouteFactory {
 
     get CONTACTS() {
         this.tmp_path.push('contacts');
+        return this;
+    }
+
+    get LASERS() {
+        this.tmp_path.push('lasers');
+        return this;
+    }
+
+    get LASERMODULES() {
+        this.tmp_path.push('lasermodules');
+        return this;
+    }
+
+    get IPM() {
+        this.tmp_path.push('ipm');
+        return this;
+    }
+
+    get PCS() {
+        this.tmp_path.push('pcs');
         return this;
     }
 

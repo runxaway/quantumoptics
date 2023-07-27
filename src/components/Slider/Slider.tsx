@@ -1,4 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+
+import { ROUTES } from '@constants/Routes';
 
 import styles from './Slider.module.scss'
 
@@ -37,6 +40,12 @@ export function Slider(): JSX.Element {
         <ul className={styles.ButtonsWrapper}>
             {data.Products.map((obj, i) => {
                 return (
+                    <Link
+                        key={obj.productId}
+                        to={{
+                            pathname: ROUTES.PRODUCTS.$(obj.pathName).END
+                        }}
+                    >
                     <li
                         key={obj.productId}
                         className={index === i ? styles.BoxActive : styles.Box}
@@ -54,6 +63,7 @@ export function Slider(): JSX.Element {
                             {obj.productName}
                         </div>
                     </li>
+                    </Link>
                 );
             })}
         </ul>
