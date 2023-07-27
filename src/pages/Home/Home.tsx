@@ -6,6 +6,8 @@ import { Slider } from "../../components/Slider/Slider";
 import { AwardsSlider } from "../../components/AwardsSlider/AwardsSlider";
 
 const Home = (): JSX.Element => {
+    window.scrollTo(0, 0);
+    
     return (
         <div className={styles.HomeBody}>
             <div className={styles.FirstBlock}>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from './ProductCard.module.scss'
+import styles from './SubProductCard.module.scss'
 
 type SubProductCardProps = {
     prodId: string,

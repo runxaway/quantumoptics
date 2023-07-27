@@ -7,6 +7,8 @@ import { ProductCard } from "../../components/ProductCard/ProductCard";
 import data from '../../products.json'
 
 const Products = (): JSX.Element => {
+    window.scrollTo(0, 0);
+    
     return (
         <div className={styles.ProductsBody}>
             <div className={styles.ProdLabel}>
