@@ -1,30 +1,32 @@
 import React from "react";
 import { useParams } from 'react-router';
 
-import styles from './SubProduct.module.scss'
+import styles from './SubProducts.module.scss'
 
 import { SubProductCard } from "../../../components/SubProductCard/SubProductCard";
 
 import data from '../../../products.json'
 
-const SubProduct = (): JSX.Element => {
+const SubProducts = (): JSX.Element => {
     window.scrollTo(0, 0);
-    const { subProductId } = useParams<{ subProductId: string }>();
+    const { productId } = useParams() as { productId: string };
+    productId !== undefined ? productId : '';
+    console.log(productId);
 
     return (
         <div className={styles.ProductsBody}>
             <div className={styles.ProdLabel}>
-                {/* <div className={styles.Name}>{data.Products[subProductId].productName}</div> */}
+                <div className={styles.Name}>{data.Products[parseInt(productId)].productName}</div>
             </div>
             <div className={styles.Block}>
                 <div className={styles.ProdContainer}>
-                    {data.Products.map((field, index) => {
+                    {data.Products[parseInt(productId)].subProducts.map((field, index) => {
                         return (
                             <SubProductCard
                                 key={index}
-                                prodId={field.productId}
-                                prodName={field.productName}
-                                prodImage={`../../images/production/prod${field.productId}.jpg`}
+                                prodId={field.subProductId}
+                                prodName={field.subProductName}
+                                prodImage={`../../images/production/prod${field.subProductId}.jpg`}
                             />
                         );
                     })}
@@ -35,4 +37,4 @@ const SubProduct = (): JSX.Element => {
     );
 }
 
-export default SubProduct;
+export default SubProducts;

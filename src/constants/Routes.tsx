@@ -3,10 +3,10 @@ export const PRODUCTS = '/products';
 export const PUBLICATIONS = '/publications';
 export const CONTACTS = '/contacts';
 
-export const LASERS = '/lasers';
-export const LASERMODULES = '/lasermodules';
-export const IPM = '/ipm';
-export const PCS = '/pcs';
+export const LASERS = '/0';
+export const LASERMODULES = '/1';
+export const IPM = '/2';
+export const PCS = '/3';
 
 export const ANY = '/*';
 
@@ -42,22 +42,22 @@ class RouteFactory {
     }
 
     get LASERS() {
-        this.tmp_path.push('lasers');
+        this.tmp_path.push('0');
         return this;
     }
 
     get LASERMODULES() {
-        this.tmp_path.push('lasermodules');
+        this.tmp_path.push('1');
         return this;
     }
 
     get IPM() {
-        this.tmp_path.push('ipm');
+        this.tmp_path.push('2');
         return this;
     }
 
     get PCS() {
-        this.tmp_path.push('pcs');
+        this.tmp_path.push('3');
         return this;
     }
 

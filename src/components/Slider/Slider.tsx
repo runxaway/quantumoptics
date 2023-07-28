@@ -43,26 +43,26 @@ export function Slider(): JSX.Element {
                     <Link
                         key={obj.productId}
                         to={{
-                            pathname: ROUTES.PRODUCTS.$(obj.pathName).END
+                            pathname: ROUTES.PRODUCTS.$(obj.productId).END
                         }}
                     >
-                    <li
-                        key={obj.productId}
-                        className={index === i ? styles.BoxActive : styles.Box}
-                        onMouseOverCapture={() => {
-                            setIndex(i);
-                            setIsShow(true);
-                            setDelay(7000);
-                        }}
-                        onMouseLeave={() => {
-                            setIsShow(false);
-                            setDelay(2500);
-                        }}
-                    >
-                        <div className={styles.ButtonName}>
-                            {obj.productName}
-                        </div>
-                    </li>
+                        <li
+                            key={obj.productId}
+                            className={index === i ? styles.BoxActive : styles.Box}
+                            onMouseOverCapture={() => {
+                                setIndex(i);
+                                setIsShow(true);
+                                setDelay(7000);
+                            }}
+                            onMouseLeave={() => {
+                                setIsShow(false);
+                                setDelay(2500);
+                            }}
+                        >
+                            <div className={styles.ButtonName}>
+                                {obj.productName}
+                            </div>
+                        </li>
                     </Link>
                 );
             })}
