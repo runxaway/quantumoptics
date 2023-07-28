@@ -4,7 +4,8 @@
 
     .ProdLabel {
         // width: 346px;
-        width: 24.0277vw;
+        // width: 24.0277vw;
+        max-width: 30.0277vw;
         // height: 54px;
         height: 3.75vw;
         margin-bottom: 1.66vw;
@@ -17,6 +18,8 @@
         box-shadow: 0.13888vw 0.13888w 0.3472vw 0 rgba(0, 0, 0, 0.10);
         backdrop-filter: blur(25px);
         position: relative;
+        justify-content: center;
+        display: flex;
 
         &::before {
             content: "";
@@ -52,6 +55,7 @@
 
         .Name {
             // padding-top: 10px;
+            width: 28.805vw;
             padding-top: 0.694444vw;
             color: rgba(255, 255, 255, 0.75);
             text-align: center;
@@ -68,7 +72,7 @@
         color: white;
         // width: 1032px;
         // height: 340px;
-        // height: 45.2083vw;
+        // max-height: 45.2083vw;
         // border-radius: 15px;
         border-radius: 1.041666vw;
         background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
@@ -118,23 +122,23 @@
             grid-gap: 2.222vw 4.444vw;
         }
     }
+}
 
-    .Copy {
-        // margin-left: 583px;
-        margin-left: 34.166vw;
-        padding-top: 5.5555vw;
-        padding-bottom: 2.777vw;
-        // width: 274px;
-        width: 19.027vw;
-        // height: 17px;
-        height: 1.18055vw;
-        color: #FFF;
-        text-align: center;
-        font-family: Helvetica Neue;
-        // font-size: 14px;
-        font-size: 0.97222vw;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    }
+.Copy {
+    // margin-left: 583px;
+    margin-left: 40.4861vw;
+    padding-top: 8.5555vw;
+    padding-bottom: 2.777vw;
+    // width: 274px;
+    width: 19.027vw;
+    // height: 17px;
+    height: 1.18055vw;
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica Neue;
+    // font-size: 14px;
+    font-size: 0.97222vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }

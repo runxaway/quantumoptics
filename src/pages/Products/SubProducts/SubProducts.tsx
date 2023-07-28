@@ -14,6 +14,7 @@ const SubProducts = (): JSX.Element => {
     console.log(productId);
 
     return (
+        <>
         <div className={styles.ProductsBody}>
             <div className={styles.ProdLabel}>
                 <div className={styles.Name}>{data.Products[parseInt(productId)].productName}</div>
@@ -32,8 +33,9 @@ const SubProducts = (): JSX.Element => {
                     })}
                 </div>
             </div>
-            <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
         </div>
+        <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
+        </>
     );
 }
 

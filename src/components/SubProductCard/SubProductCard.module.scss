@@ -3,7 +3,8 @@
     // width: 385px;
     width: 24.3055vw;
     // height: 51px;
-    height: 18.541vw;
+    // min-height: 18.541vw;;
+    // max-height: 21.11vw;
     // border-radius: 15px;
     border-radius: 1.041666vw;
     background: rgba(255, 255, 255, 0.15);
@@ -52,9 +53,9 @@
     }
 
     .ProdTextBox {
-        min-width: 7.708vw;
-        height: 2.708vw;
-        margin: 0 1.111vw;
+        width: 22.083vw;
+        min-height: 4.6vw;
+        margin: 0 1.111vw 1.111vw 1.111vw;
         border-radius: 0.69444vw;
         border: 0.0694vw solid rgba(255, 255, 255, 0.30);
         background: rgba(255, 255, 255, 0.2);
@@ -63,14 +64,17 @@
         position: relative;
         z-index: 2;
         transition: (border, color, background) ease 400ms;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     
         .ProdText {
-            margin: 0.555vw 0;
-            min-width: 4.861vw;
-            height: 1.6666vw;
+            padding: 0.555vw 0;
+            width: 20.347vw;
+            // height: 1.6666vw;
             text-align: center;
             font-family: Helvetica Neue;
-            font-size: 1.388vw;
+            font-size: 1.111vw;
             font-style: normal;
             font-weight: 300;
         }
@@ -82,7 +86,7 @@
     // width: 385px;
     width: 24.3055vw;
     // height: 51px;
-    height: 18.541vw;
+    // height: 18.541vw;
     // border-radius: 15px;
     border-radius: 1.041666vw;
     background: rgba(255, 255, 255, 0.25);
@@ -129,9 +133,10 @@
     }
 
     .ProdTextBox {
-        min-width: 7.708vw;
-        height: 2.708vw;
-        margin: 0 1.111vw;
+        width: 22.083vw;
+        min-height: 4.6vw;
+        // height: 5.2777vw;
+        margin: 0 1.111vw 1.111vw 1.111vw;
         border-radius: 0.69444vw;
         border: 0.0694vw solid rgba(255, 255, 255, 0.40);
         background: rgba(255, 255, 255, 0.4);
@@ -140,14 +145,17 @@
         position: relative;
         z-index: 2;
         transition: (border, color, background) ease 400ms;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     
         .ProdText {
-            margin: 0.555vw 0;
-            min-width: 4.861vw;
-            height: 1.6666vw;
+            padding: 0.555vw 0;
+            width: 20.347vw;
+            // height: 1.6666vw;
             text-align: center;
             font-family: Helvetica Neue;
-            font-size: 1.388vw;
+            font-size: 1.111vw;
             font-style: normal;
             font-weight: 300;
         }
