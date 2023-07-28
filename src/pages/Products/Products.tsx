@@ -8,7 +8,7 @@ import data from '../../products.json'
 
 const Products = (): JSX.Element => {
     window.scrollTo(0, 0);
-    
+
     return (
         <div className={styles.ProductsBody}>
             <div className={styles.ProdLabel}>
@@ -23,7 +23,7 @@ const Products = (): JSX.Element => {
                                 prodId={field.productId}
                                 prodPathName={field.pathName}
                                 prodName={field.productName}
-                                prodImage={`../../images/production/prod${field.productId}.jpg`}
+                                prodImage={`../../images/production/prod${field.productId}.png`}
                             />
                         );
                     })}
