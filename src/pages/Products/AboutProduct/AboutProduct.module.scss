@@ -1,5 +1,152 @@
 .AboutBody {
-    padding-top: 100px;
-    color: white;
-    height: 100vw;
+    padding: 7.98611vw 6.31944vw 0;
+
+    .ButtonBack {
+        width: 10.555vw;
+        height: 2.777vw;
+        flex-shrink: 0;
+        border-radius: 1.0416vw;
+        background: rgba(217, 217, 217, 0.20);
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(25px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.85);
+        margin: 0 0 2.1527vw 1.875vw;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            // inset: calc(-1px);
+            inset: calc(-0.06944444444444445vw);
+            
+            // border-radius: 13px;
+            border-radius: 1.1111vw;
+            // padding: 1px;
+            padding: 0.06944444444444445vw;
+            background: linear-gradient(136deg, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.25));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        &:hover::before {
+            background: linear-gradient(136deg, rgb(255, 255, 255, 0.55), rgb(255, 255, 255, 0.30));
+        }
+
+        &::after {
+            border-radius: 0.8333333333333334vw;
+            position: absolute;
+            content: "";
+            inset: 0;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 400ms ease;
+            background: -webkit-linear-gradient(162deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.40));
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+
+        .ButtonName {
+            text-align: center;
+            font-family: Helvetica Neue;
+            font-size: 1.111vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    .Block {
+        color: white;
+        // width: 1032px;
+        // height: 340px;
+        height: 45.2083vw;
+        // border-radius: 15px;
+        border-radius: 1.041666vw;
+        background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
+        // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+        box-shadow: 0.1388vw 0.1388vw 0.3472vw 0 rgba(0, 0, 0, 0.10);
+        position: relative;
+        display: flex;
+
+        &::before {
+            content: "";
+            position: absolute;
+            // inset: calc(-1px);
+            inset: calc(-0.06944444444444445vw);
+            
+            // border-radius: 16px;
+            border-radius: 1.1111111111111112vw;
+            // padding: 1px;
+            padding: 0.06944444444444445vw;
+            background: linear-gradient(100deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            // inset: calc(-1px);
+            inset: calc(-0.06944444444444445vw);
+            
+            // border-radius: 16px;
+            border-radius: 1.1111111111111112vw;
+            // padding: 1px;
+            padding: 0.06944444444444445vw;
+            background: linear-gradient(-20deg, rgb(255, 255, 255, 0.30), rgb(255, 255, 255, 0));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        .AboutImageContainer {
+            border-radius: 1.0416vw;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 39.791vw;
+            height: 29.583vw;
+            margin: 3.055vw 4.5138vw 3.055vw 6.388vw;
+            object-fit: cover;
+            overflow: hidden;
+            justify-content: center;
+            display: flex;
+
+            .AboutImage {
+                height: 29.583vw;
+            }
+        }
+    }
+}
+
+.Copy {
+    // margin-left: 583px;
+    margin-left: 40.4861vw;
+    padding-top: 8.5555vw;
+    padding-bottom: 2.777vw;
+    // width: 274px;
+    width: 19.027vw;
+    // height: 17px;
+    height: 1.18055vw;
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica Neue;
+    // font-size: 14px;
+    font-size: 0.97222vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }

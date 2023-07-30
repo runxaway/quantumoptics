@@ -17,35 +17,35 @@ const SubProducts = (): JSX.Element => {
 
     return (
         <>
-        <div className={styles.ProductsBody}>
-            <div className={styles.SubProdLabelContainer}>
-                <div className={styles.ProdLabel}>
-                    <div className={styles.Name}>{data.Products[parseInt(productId)].productName}</div>
+            <div className={styles.ProductsBody}>
+                <div className={styles.SubProdLabelContainer}>
+                    <div className={styles.ProdLabel}>
+                        <div className={styles.Name}>{data.Products[parseInt(productId)].productName}</div>
+                    </div>
+                    <div className={styles.ButtonBack} onClick={() => navigate(-1)}>
+                        <div className={styles.ButtonName}>
+                            Вернуться назад
+                        </div>
+                    </div>
                 </div>
-                <div className={styles.ButtonBack} onClick={() => navigate(-1)}>
-                    <div className={styles.ButtonName}>
-                        Вернуться назад
+                <div className={styles.Block}>
+                    <div className={styles.ProdContainer}>
+                        {data.Products[parseInt(productId)].subProducts.map((field, index) => {
+                            console.log(field.subProductId);
+                            return (
+                                <SubProductCard
+                                    key={index}
+                                    prodId={productId}
+                                    subprodId={field.subProductId}
+                                    subprodName={field.subProductName}
+                                    subprodImage={`../../images/subproducts/${field.subProductId}.jpg`}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
             </div>
-            <div className={styles.Block}>
-                <div className={styles.ProdContainer}>
-                    {data.Products[parseInt(productId)].subProducts.map((field, index) => {
-                        console.log(field.subProductId);
-                        return (
-                            <SubProductCard
-                                key={index}
-                                prodId={productId}
-                                subprodId={field.subProductId}
-                                subprodName={field.subProductName}
-                                subprodImage={`../../images/subproducts/${field.subProductId}.jpg`}
-                            />
-                        );
-                    })}
-                </div>
-            </div>
-        </div>
-        <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
+            <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
         </>
     );
 }
