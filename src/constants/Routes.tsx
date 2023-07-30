@@ -7,6 +7,7 @@ export const LASERS = '/0';
 export const LASERMODULES = '/1';
 export const IPM = '/2';
 export const PCS = '/3';
+export const INFO= '/info';
 
 export const ANY = '/*';
 
@@ -58,6 +59,11 @@ class RouteFactory {
 
     get PCS() {
         this.tmp_path.push('3');
+        return this;
+    }
+
+    get INFO() {
+        this.tmp_path.push('info');
         return this;
     }
 

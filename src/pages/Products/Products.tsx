@@ -23,7 +23,7 @@ const Products = (): JSX.Element => {
                                 prodId={field.productId}
                                 prodPathName={field.pathName}
                                 prodName={field.productName}
-                                prodImage={`../../images/production/prod${field.productId}.png`}
+                                prodImage={`../../images/products/prod${field.productId}.png`}
                             />
                         );
                     })}
