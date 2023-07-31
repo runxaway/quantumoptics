@@ -31,7 +31,6 @@ const SubProducts = (): JSX.Element => {
                 <div className={styles.Block}>
                     <div className={styles.ProdContainer}>
                         {data.Products[parseInt(productId)].subProducts.map((field, index) => {
-                            console.log(field.subProductId);
                             return (
                                 <SubProductCard
                                     key={index}

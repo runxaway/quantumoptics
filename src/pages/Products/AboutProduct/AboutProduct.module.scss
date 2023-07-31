@@ -71,7 +71,7 @@
         color: white;
         // width: 1032px;
         // min-height: 340px;
-        min-height: 45.2083vw;
+        // min-height: 45.2083vw;
         // border-radius: 15px;
         border-radius: 1.041666vw;
         background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
@@ -157,16 +157,16 @@
                 }
 
                 .TextLabel {
-                    margin: 20px 28.5px;
+                    margin: 1.3888vw 1.979vw;
                     display: flex;
-                    width: 380.22px;
-                    max-height: 87px;
+                    width: 26.388vw;
+                    max-height: 6.041vw;
                     flex-direction: column;
                     justify-content: center;
                     color: rgba(255, 255, 255, 0.95);
                     text-align: center;
                     font-family: Helvetica Neue;
-                    font-size: 24px;
+                    font-size: 1.66vw;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
@@ -182,23 +182,23 @@
                 }
 
                 .Usage {
-                    width: 235px;
-                    margin: 10px 0 12px 28.5px;
+                    width: 16.3194vw;
+                    margin: 0.694vw 0 0.833vw 1.979vw;
                     color: #FFF;
                     text-align: center;
                     font-family: Helvetica Neue;
-                    font-size: 24px;
+                    font-size: 1.66vw;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
                 }
 
                 .TextAbout {
-                    margin-left: 28.5px;
-                    width: 376px;
+                    margin-left: 1.979vw;
+                    width: 26.111vw;
                     color: rgba(255, 255, 255, 0.85);
                     font-family: Helvetica Neue;
-                    font-size: 20px;
+                    font-size: 1.388vw;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
@@ -208,12 +208,35 @@
 
         .TableContainer {
             margin: 0 6.388vw;
-            padding-bottom: 3.055vw;
+            // padding-bottom: 3.055vw;
 
             .AboutTable {
-                height: 200px;
                 border-radius: 15px;
+                // display: table-header-group;
                 border: 1px solid rgba(255, 255, 255, 0.3);
+
+                td {
+                    border: 1px solid rgba(255, 255, 255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 15px;
+                    // text-align: center;
+                    width: 100%;
+                    // justify-content: space-evenly;
+                    // align-items: center;
+    
+                    .TableElem {
+                        padding: 4px 6px;
+                        text-align: center;
+                        min-width: 129px;
+                        min-height: 20px;
+                        color: rgba(255, 255, 255, 0.9);
+                        font-family: Helvetica Neue;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        // text-align: center;
+                    }
+                }
             }
         }
     }

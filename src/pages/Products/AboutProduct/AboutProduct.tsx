@@ -36,11 +36,27 @@ const AboutProduct = (): JSX.Element => {
                             <div className={styles.TextAbout}>{data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductUse}</div>
                         </div>
                     </div>
-                    <div className={styles.TableContainer}>
-                        <div className={styles.AboutTable}>
-                    
-                        </div>
-                    </div>
+                    <table className={styles.TableContainer}>
+                        <tbody className={styles.AboutTable}>
+                            {data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductTable?.map((el, idx) => {
+                                return (
+                                    <tr key={idx}>
+                                        {el.elemName ? <td rowSpan={el.rowSpan}>
+                                            <div className={styles.TableElem}>{el.elemName}</div>
+                                        </td> : ''}
+                                        {el.elemValue.map((e, i) => {
+                                            console.log(50/el.elemValue.length)
+                                            return (
+                                                <td key={i} colSpan={el.colSpan}>
+                                                    <div className={styles.TableElem}>{e}</div>
+                                                </td>
+                                            );
+                                        })}
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
