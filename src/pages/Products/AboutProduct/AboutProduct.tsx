@@ -10,6 +10,7 @@ const AboutProduct = (): JSX.Element => {
     window.scrollTo(0, 0);
     const navigate = useNavigate();
 
+    const { productId } = useParams() as { productId: string };
     const { subProductId } = useParams() as { subProductId: string };
 
     return (
@@ -21,11 +22,24 @@ const AboutProduct = (): JSX.Element => {
                     </div>
                 </div>
                 <div className={styles.Block}>
-                    <div className={styles.AboutImageContainer}>
-                        <img
-                            className={styles.AboutImage}
-                            src={`../../../images/subproducts/${subProductId}.png`}
-                        />
+                    <div className={styles.TopBlockWrapper}>
+                        <div className={styles.AboutImageContainer}>
+                            <img
+                                className={styles.AboutImage}
+                                src={`../../../images/subproducts/${subProductId}.png`}
+                            />
+                        </div>
+                        <div className={styles.TextBlock}>
+                            <div className={styles.TextLabel}>{data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductName}</div>
+                            <div className={styles.Line}></div>
+                            <div className={styles.Usage}>Области применения</div>
+                            <div className={styles.TextAbout}>{data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductUse}</div>
+                        </div>
+                    </div>
+                    <div className={styles.TableContainer}>
+                        <div className={styles.AboutTable}>
+                    
+                        </div>
                     </div>
                 </div>
             </div>
