@@ -40,7 +40,6 @@ const AboutProduct = (): JSX.Element => {
                     <table className={styles.TableContainer}>
                         <tbody className={styles.AboutTable}>
                             {data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductTable?.map((el, idx) => {
-                                console.log(el.elemValue[0]);
                                 return (
                                     <tr key={idx}>
                                         {idx === 0 ?

@@ -9,7 +9,6 @@ type ProductCardProps = {
     prodId: string,
     prodName: string,
     prodImage: string;
-    prodPathName: string;
 };
 
 export function ProductCard(props: ProductCardProps): JSX.Element {

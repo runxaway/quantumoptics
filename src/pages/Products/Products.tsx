@@ -21,7 +21,6 @@ const Products = (): JSX.Element => {
                             <ProductCard
                                 key={index}
                                 prodId={field.productId}
-                                prodPathName={field.pathName}
                                 prodName={field.productName}
                                 prodImage={`../../images/products/prod${field.productId}.png`}
                             />
