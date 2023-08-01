@@ -2,6 +2,7 @@
     padding: 7.98611vw 6.31944vw 0;
 
     .ButtonBack {
+        position: relative;
         width: 10.555vw;
         height: 2.777vw;
         flex-shrink: 0;
@@ -208,20 +209,44 @@
 
         .TableContainer {
             margin: 0 6.388vw;
-            // padding-bottom: 3.055vw;
+            padding-bottom: 3.055vw;
+            display: block;
+            // border: 1px solid rgba(255, 255, 255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);
+            // border-radius: 15px;
+
 
             .AboutTable {
                 border-radius: 15px;
-                // display: table-header-group;
                 border: 1px solid rgba(255, 255, 255, 0.3);
+                display: block;
+                overflow: hidden;
+
+                tr {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    align-items: center;
+                }
 
                 td {
-                    border: 1px solid rgba(255, 255, 255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);
-                    border-radius: 15px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.3);
                     // text-align: center;
                     width: 100%;
                     // justify-content: space-evenly;
                     // align-items: center;
+
+                    .TableName {
+                        padding: 5px 0 5px 20px;
+                        text-align: left;
+                        min-width: 129px;
+                        max-width: 435px;
+                        white-space: nowrap;
+                        min-height: 20px;
+                        color: rgba(255, 255, 255, 0.9);
+                        font-family: Helvetica Neue;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
     
                     .TableElem {
                         padding: 4px 6px;
@@ -236,6 +261,18 @@
                         line-height: normal;
                         // text-align: center;
                     }
+                }
+
+                tr:nth-child(-n+2) {
+                    background: rgba(255, 255, 255, 0.15);
+                }
+
+                td:last-child {
+                    border-right: 0px solid rgba(255, 255, 255, 0.3);
+                }
+
+                tr:last-child {
+                    border-bottom: 0px solid rgba(255, 255, 255, 0.3);
                 }
             }
         }

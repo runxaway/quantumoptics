@@ -41,9 +41,11 @@ const AboutProduct = (): JSX.Element => {
                             {data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductTable?.map((el, idx) => {
                                 return (
                                     <tr key={idx}>
-                                        {el.elemName ? <td rowSpan={el.rowSpan}>
-                                            <div className={styles.TableElem}>{el.elemName}</div>
-                                        </td> : ''}
+                                        {el.elemName ?
+                                            <td rowSpan={el.rowSpan}>
+                                                <div className={styles.TableName}>{el.elemName}</div>
+                                            </td>
+                                        : ''}
                                         {el.elemValue.map((e, i) => {
                                             console.log(50/el.elemValue.length)
                                             return (
