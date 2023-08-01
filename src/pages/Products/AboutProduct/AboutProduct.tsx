@@ -12,6 +12,7 @@ const AboutProduct = (): JSX.Element => {
 
     const { productId } = useParams() as { productId: string };
     const { subProductId } = useParams() as { subProductId: string };
+    let subProductCount = data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductCount;
 
     return (
         <>
@@ -39,17 +40,21 @@ const AboutProduct = (): JSX.Element => {
                     <table className={styles.TableContainer}>
                         <tbody className={styles.AboutTable}>
                             {data.Products[parseInt(productId)].subProducts[parseInt(subProductId.slice(1))].subProductTable?.map((el, idx) => {
+                                console.log(el.elemValue[0]);
                                 return (
                                     <tr key={idx}>
-                                        {el.elemName ?
-                                            <td rowSpan={el.rowSpan}>
+                                        {idx === 0 ?
+                                            <td className={styles.TableNameWrap} rowSpan={2}>
+                                                {el.elemName}
+                                            </td>
+                                        : idx === 1 ? '' :
+                                            <td>
                                                 <div className={styles.TableName}>{el.elemName}</div>
                                             </td>
-                                        : ''}
+                                        }
                                         {el.elemValue.map((e, i) => {
-                                            console.log(50/el.elemValue.length)
                                             return (
-                                                <td key={i} colSpan={el.colSpan}>
+                                                <td key={i} style={{width: `16%`}} colSpan={idx === 0 && subProductCount ? subProductCount : el.elemValue.length == 1 && subProductCount ? subProductCount : 1}>
                                                     <div className={styles.TableElem}>{e}</div>
                                                 </td>
                                             );

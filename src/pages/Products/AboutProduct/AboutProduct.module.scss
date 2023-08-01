@@ -216,51 +216,79 @@
 
 
             .AboutTable {
-                border-radius: 15px;
-                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 1.0416vw;
+                border: 0.104vw solid rgba(255, 255, 255, 0.3);
                 display: block;
                 overflow: hidden;
 
                 tr {
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-                    align-items: center;
+                    border-bottom: 0.104vw solid rgba(255, 255, 255, 0.3);
+                    display: table-row;
+                    text-align: center;
                 }
 
                 td {
-                    border-right: 1px solid rgba(255, 255, 255, 0.3);
-                    // text-align: center;
-                    width: 100%;
-                    // justify-content: space-evenly;
-                    // align-items: center;
+                    border-right: 0.104vw solid rgba(255, 255, 255, 0.3);
+                    width: 47%;
 
                     .TableName {
-                        padding: 5px 0 5px 20px;
+                        margin: 0.4166vw 0.6944vw 0.4166vw 1.388vw;
                         text-align: left;
-                        min-width: 129px;
-                        max-width: 435px;
-                        white-space: nowrap;
-                        min-height: 20px;
+                        // min-width: 129px;
+                        // max-width: 435px;
+                        // white-space: nowrap;
+                        height: 1.388vw;
                         color: rgba(255, 255, 255, 0.9);
                         font-family: Helvetica Neue;
-                        font-size: 20px;
+                        font-size: 1.388vw;
                         font-style: normal;
                         font-weight: 300;
                         line-height: normal;
                     }
     
                     .TableElem {
-                        padding: 4px 6px;
-                        text-align: center;
-                        min-width: 129px;
-                        min-height: 20px;
+                        padding: 0.4166vw 0.6944vw;
+                        
+                        // width: 100%;
+                        min-height: 1.388vw;
                         color: rgba(255, 255, 255, 0.9);
                         font-family: Helvetica Neue;
-                        font-size: 20px;
+                        font-size: 1.388vw;
                         font-style: normal;
                         font-weight: 300;
                         line-height: normal;
-                        // text-align: center;
+                        text-align: center;
                     }
+                }
+
+                .TableNameWrap {
+                    // margin: 20px 0;
+                    // height: 100%;
+                    // align-items: center;
+                    text-align: center;
+                    vertical-align: middle;
+                    justify-content: center;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-family: Helvetica Neue;
+                    font-size: 1.6666vw;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+
+                    // .TableNameFr {
+                    //     text-align: center;
+                    //     // min-width: 129px;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     justify-content: center;
+                    //     color: rgba(255, 255, 255, 0.9);
+                    //     font-family: Helvetica Neue;
+                    //     font-size: 26px;
+                    //     font-style: normal;
+                    //     font-weight: 300;
+                    //     line-height: normal;
+                    //     background: red;
+                    // }
                 }
 
                 tr:nth-child(-n+2) {
@@ -268,11 +296,11 @@
                 }
 
                 td:last-child {
-                    border-right: 0px solid rgba(255, 255, 255, 0.3);
+                    border-right: 0 solid rgba(255, 255, 255, 0.3);
                 }
 
                 tr:last-child {
-                    border-bottom: 0px solid rgba(255, 255, 255, 0.3);
+                    border-bottom: 0 solid rgba(255, 255, 255, 0.3);
                 }
             }
         }
