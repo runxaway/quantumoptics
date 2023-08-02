@@ -47,14 +47,14 @@ const AboutProduct = (): JSX.Element => {
                                                 {el.elemName}
                                             </td>
                                         : idx === 1 ? '' :
-                                            <td>
-                                                <div className={styles.TableName}>{el.elemName}</div>
+                                            <td className={styles.TableName}>
+                                                {el.elemName}
                                             </td>
                                         }
                                         {el.elemValue.map((e, i) => {
                                             return (
-                                                <td key={i} style={{width: `16%`}} colSpan={idx === 0 && subProductCount ? subProductCount : el.elemValue.length == 1 && subProductCount ? subProductCount : 1}>
-                                                    <div className={styles.TableElem}>{e}</div>
+                                                <td key={i} className={styles.TableElem} colSpan={idx === 0 && subProductCount ? subProductCount : el.elemValue.length == 1 && subProductCount ? subProductCount : 1}>
+                                                    {e}
                                                 </td>
                                             );
                                         })}

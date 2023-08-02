@@ -184,7 +184,7 @@
 
                 .Usage {
                     width: 16.3194vw;
-                    margin: 0.694vw 0 0.833vw 1.979vw;
+                    margin: 1.3888vw 0 1vw 1.979vw;
                     color: #FFF;
                     text-align: center;
                     font-family: Helvetica Neue;
@@ -229,36 +229,23 @@
 
                 td {
                     border-right: 0.104vw solid rgba(255, 255, 255, 0.3);
-                    width: 47%;
+                    width: 40%;
+                }
 
-                    .TableName {
-                        margin: 0.4166vw 0.6944vw 0.4166vw 1.388vw;
-                        text-align: left;
-                        // min-width: 129px;
-                        // max-width: 435px;
-                        // white-space: nowrap;
-                        height: 1.388vw;
-                        color: rgba(255, 255, 255, 0.9);
-                        font-family: Helvetica Neue;
-                        font-size: 1.388vw;
-                        font-style: normal;
-                        font-weight: 300;
-                        line-height: normal;
-                    }
-    
-                    .TableElem {
-                        padding: 0.4166vw 0.6944vw;
-                        
-                        // width: 100%;
-                        min-height: 1.388vw;
-                        color: rgba(255, 255, 255, 0.9);
-                        font-family: Helvetica Neue;
-                        font-size: 1.388vw;
-                        font-style: normal;
-                        font-weight: 300;
-                        line-height: normal;
-                        text-align: center;
-                    }
+                .TableName {
+                    padding: 0.5vw 0.6944vw 0.5vw 1.388vw;
+                    text-align: left;
+                    vertical-align: middle;
+                    // min-width: 129px;
+                    // max-width: 435px;
+                    // white-space: nowrap;
+                    height: 1.388vw;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-family: Helvetica Neue;
+                    font-size: 1.388vw;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
                 }
 
                 .TableNameWrap {
@@ -274,21 +261,22 @@
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
+                }
 
-                    // .TableNameFr {
-                    //     text-align: center;
-                    //     // min-width: 129px;
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     justify-content: center;
-                    //     color: rgba(255, 255, 255, 0.9);
-                    //     font-family: Helvetica Neue;
-                    //     font-size: 26px;
-                    //     font-style: normal;
-                    //     font-weight: 300;
-                    //     line-height: normal;
-                    //     background: red;
-                    // }
+                .TableElem {
+                    padding: 0.5vw 0.6944vw;
+                    
+                    width: 10%;
+                    max-width: 16%;
+                    min-height: 1.388vw;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-family: Helvetica Neue;
+                    font-size: 1.388vw;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    text-align: center;
+                    vertical-align: middle;
                 }
 
                 tr:nth-child(-n+2) {
