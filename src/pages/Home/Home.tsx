@@ -17,7 +17,7 @@ const Home = (): JSX.Element => {
                 <div className={styles.Label}>Награды</div>
             </div>
             <div className={styles.SecondBlock}>
-                <AwardsSlider arrN={6} />
+                <AwardsSlider arrN={10} />
             </div>
             <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
         </div>

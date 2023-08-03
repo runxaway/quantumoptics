@@ -12,6 +12,7 @@ import Products from "@pages/Products/Products";
 import SubProducts from "@pages/Products/SubProducts/SubProducts";
 import AboutProduct from "@pages/Products/AboutProduct/AboutProduct";
 import Publications from "@pages/Publications/Publications";
+import Contacts from "@pages/Contacts/Contacts";
 
 const Main = (): JSX.Element => {
     return (
@@ -26,6 +27,7 @@ const Main = (): JSX.Element => {
                 <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProduct />} />
                 
                 <Route path={ROUTES.PUBLICATIONS.END} element={<Publications />} />
+                <Route path={ROUTES.CONTACTS.END} element={<Contacts />} />
             </Routes>
             </div>
         </>
