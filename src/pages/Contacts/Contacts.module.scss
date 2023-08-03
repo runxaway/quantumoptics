@@ -65,10 +65,7 @@
 
     .Block {
         color: white;
-        // width: 1032px;
-        // min-height: 340px;
-        // min-height: 45.2083vw;
-        // border-radius: 15px;
+        height: 68.9583vw;
         border-radius: 1.041666vw;
         background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
         // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
@@ -108,6 +105,129 @@
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
+        }
+
+        .TopBlockWrapper {
+            padding: 45px 45px 0;
+            display: flex;
+
+            .AboutUsBlock {
+                width: 456px;
+                // height: 411px;
+                border-radius: 1.041vw;
+                background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
+                box-shadow: 0.138vw 0.138vw 0.34722vw 0 rgba(0, 0, 0, 0.10);
+                backdrop-filter: blur(25px);
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: calc(-0.06944444444444445vw);
+                    
+                    border-radius: 1.1111vw;
+                    padding: 0.06944444444444445vw;
+                    background: linear-gradient(136deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0.3));
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                }
+
+                .TextWrapper {
+                    // height: 82px;
+                    width: 403px;
+                    margin: 27px 27px 24px 27px;
+
+                    .TextLabel {
+                        display: flex;
+                        margin-bottom: 10px;
+                        width: 170px;
+                        height: 24px;
+                        color: rgba(255, 255, 255, 0.95);
+                        font-family: Helvetica Neue;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+    
+                    .TextAbout {
+                        color: rgba(255, 255, 255, 0.95);
+                        font-family: Helvetica Neue;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+            }
+            
+            .MapBlock {
+                margin-left: 45px;
+                width: 665px;
+                // height: 411px;
+                border-radius: 1.041vw;
+                background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
+                box-shadow: 0.138vw 0.138vw 0.34722vw 0 rgba(0, 0, 0, 0.10);
+                backdrop-filter: blur(25px);
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: calc(-0.06944444444444445vw);
+                    
+                    border-radius: 1.1111vw;
+                    padding: 0.06944444444444445vw;
+                    background: linear-gradient(136deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0.3));
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                    display: flex;
+                }
+
+                .MapBorder {
+                    margin: 30px;
+                    height: 361px;
+                    border-radius: 20px;
+                    border: 0.104vw solid rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+
+        .BottomBlock {
+            margin: 45px;
+            // width: 665px;
+            height: 411px;
+            border-radius: 1.041vw;
+            background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
+            box-shadow: 0.138vw 0.138vw 0.34722vw 0 rgba(0, 0, 0, 0.10);
+            backdrop-filter: blur(25px);
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: calc(-0.06944444444444445vw);
+                
+                border-radius: 1.1111vw;
+                padding: 0.06944444444444445vw;
+                background: linear-gradient(136deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0.4));
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                display: flex;
+            }
+
+            .MapBorder {
+                margin: 30px;
+                height: 361px;
+                border-radius: 20px;
+                border: 0.104vw solid rgba(255, 255, 255, 0.2);
+            } 
         }
     }
 }

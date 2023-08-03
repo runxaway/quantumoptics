@@ -8,6 +8,7 @@
     // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
     box-shadow: 0.1388vw 0.1388vw 0.277vw 0 rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     position: fixed;
     display: flex;
     z-index: 5;

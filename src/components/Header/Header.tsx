@@ -22,10 +22,10 @@ export function Header(): JSX.Element {
             <div className={styles.Adress}>
                 <ul>
                     <li>
-                        +7-999-99-99
+                        +7-921-888-88-55
                     </li>
                     <li>
-                        Адрес: Санкт-Петербург, Белоостровская, 21
+                        Адрес: Санкт-Петербург, Белоостровская, 22
                     </li>
                 </ul>
             </div>
