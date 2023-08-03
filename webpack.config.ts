@@ -75,7 +75,18 @@ const config: webpack.Configuration = {
                 },
                 ],
             },
-        ],
+            {
+                test: /\.pdf$/,
+                use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                    name: '[name].[ext]',
+                    },
+                },
+                ],
+            }
+        ]
     },
     devtool: 'inline-source-map',
     resolve: {
