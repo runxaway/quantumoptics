@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
-import { ROUTES } from '@constants/Routes';
+import { ROUTES } from '../../constants/Routes';
 
 import styles from './Slider.module.scss'
 

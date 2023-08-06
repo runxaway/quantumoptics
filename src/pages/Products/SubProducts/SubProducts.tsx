@@ -13,6 +13,7 @@ const SubProducts = (): JSX.Element => {
     const navigate = useNavigate();
 
     const { productId } = useParams() as { productId: string };
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     productId !== undefined ? productId : '';
 
     return (

@@ -1,18 +1,18 @@
 import React from "react";
 import { Route, Routes } from 'react-router';
 
-import { ROUTES } from '@constants/Routes';
+import { ROUTES } from '../../constants/Routes';
 
 import styles from './Main.module.scss';
 
-import { Header } from "@components/Header/Header";
+import { Header } from '../../components/Header/Header';
 
-import Home from "@pages/Home/Home";
-import Products from "@pages/Products/Products";
-import SubProducts from "@pages/Products/SubProducts/SubProducts";
-import AboutProduct from "@pages/Products/AboutProduct/AboutProduct";
-import Publications from "@pages/Publications/Publications";
-import Contacts from "@pages/Contacts/Contacts";
+import Home from '../Home/Home';
+import Products from '../Products/Products';
+import SubProducts from '../Products/SubProducts/SubProducts';
+import AboutProduct from '../Products/AboutProduct/AboutProduct';
+import Publications from '../Publications/Publications';
+import Contacts from '../Contacts/Contacts';
 
 const Main = (): JSX.Element => {
     return (

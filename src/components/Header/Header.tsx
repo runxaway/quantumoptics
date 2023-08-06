@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-import { ROUTES } from '@constants/Routes';
+import { ROUTES } from '../../constants/Routes';
 
 import styles from './Header.module.scss'
 import { MenuButton } from "../MenuButton/MenuButton";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from 'react-router-dom';
 
-import { ROUTES } from '@constants/Routes';
+import { ROUTES } from '../../constants/Routes';
 
 import styles from './MenuButton.module.scss'
 
