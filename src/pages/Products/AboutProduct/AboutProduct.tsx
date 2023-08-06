@@ -2,9 +2,23 @@ import React from "react";
 import { useParams } from 'react-router';
 import { useNavigate } from 'react-router-dom';
 
-import styles from './AboutProduct.module.scss'
+import styles from './AboutProduct.module.scss';
 
-import data from '../../../products.json'
+import s00 from '../../../images/subproducts/00.png';
+import s01 from '../../../images/subproducts/01.png';
+import s02 from '../../../images/subproducts/02.png';
+import s03 from '../../../images/subproducts/03.png';
+
+import s10 from '../../../images/subproducts/10.png';
+import s11 from '../../../images/subproducts/11.png';
+import s12 from '../../../images/subproducts/12.png';
+
+import s20 from '../../../images/subproducts/20.png';
+import s21 from '../../../images/subproducts/21.png';
+
+import s30 from '../../../images/subproducts/30.png';
+
+import data from '../../../products.json';
 
 const AboutProduct = (): JSX.Element => {
     window.scrollTo(0, 0);
@@ -27,7 +41,16 @@ const AboutProduct = (): JSX.Element => {
                         <div className={styles.AboutImageContainer}>
                             <img
                                 className={styles.AboutImage}
-                                src={`../../../images/subproducts/${subProductId}.png`}
+                                src={subProductId === '00' ? s00 :
+                                        subProductId === '01' ? s01 :
+                                            subProductId === '02' ? s02 :
+                                                subProductId === '03' ? s03 :
+                                                    subProductId === '10' ? s10 :
+                                                        subProductId === '11' ? s11 :
+                                                            subProductId === '12' ? s12 :
+                                                                subProductId === '20' ? s20 :
+                                                                    subProductId === '21' ? s21 :
+                                                                        subProductId === '30' ? s30 : ''}
                             />
                         </div>
                         <div className={styles.TextBlock}>

@@ -6,6 +6,20 @@ import styles from './SubProducts.module.scss'
 
 import { SubProductCard } from "../../../components/SubProductCard/SubProductCard";
 
+import s00 from '../../../images/subproducts/00.png';
+import s01 from '../../../images/subproducts/01.png';
+import s02 from '../../../images/subproducts/02.png';
+import s03 from '../../../images/subproducts/03.png';
+
+import s10 from '../../../images/subproducts/10.png';
+import s11 from '../../../images/subproducts/11.png';
+import s12 from '../../../images/subproducts/12.png';
+
+import s20 from '../../../images/subproducts/20.png';
+import s21 from '../../../images/subproducts/21.png';
+
+import s30 from '../../../images/subproducts/30.png';
+
 import data from '../../../products.json'
 
 const SubProducts = (): JSX.Element => {
@@ -38,7 +52,16 @@ const SubProducts = (): JSX.Element => {
                                     prodId={productId}
                                     subprodId={field.subProductId}
                                     subprodName={field.subProductName}
-                                    subprodImage={`../../images/subproducts/${field.subProductId}.png`}
+                                    subprodImage={field.subProductId === '00' ? s00 :
+                                                    field.subProductId === '01' ? s01 :
+                                                        field.subProductId === '02' ? s02 :
+                                                            field.subProductId === '03' ? s03 :
+                                                                field.subProductId === '10' ? s10 :
+                                                                    field.subProductId === '11' ? s11 :
+                                                                        field.subProductId === '12' ? s12 :
+                                                                            field.subProductId === '20' ? s20 :
+                                                                                field.subProductId === '21' ? s21 :
+                                                                                    field.subProductId === '30' ? s30 : ''}
                                 />
                             );
                         })}

@@ -5,6 +5,11 @@ import { ROUTES } from '../../constants/Routes';
 
 import styles from './Slider.module.scss'
 
+import img0 from '../../images/homeImages/img0.png';
+import img1 from '../../images/homeImages/img1.png';
+import img2 from '../../images/homeImages/img2.png';
+import img3 from '../../images/homeImages/img3.png';
+
 import data from '../../products.json';
 
 export function Slider(): JSX.Element {
@@ -13,6 +18,8 @@ export function Slider(): JSX.Element {
     const [delay, setDelay] = useState(2500);
 
     const timeoutRef = useRef(0);
+
+    const imgs = [img0, img1, img2, img3];
 
     function resetTimeout() {
         if (timeoutRef.current) {
@@ -80,7 +87,7 @@ export function Slider(): JSX.Element {
                     >
                         <img
                             className={styles.Image}
-                            src={`../../images/homeImages/img${obj.productId}.png`}
+                            src={imgs[parseInt(obj.productId)]}
                         />
                     </div>
                 );
