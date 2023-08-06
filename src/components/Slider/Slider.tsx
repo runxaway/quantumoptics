@@ -80,7 +80,7 @@ export function Slider(): JSX.Element {
                     >
                         <img
                             className={styles.Image}
-                            src={`../../images/homeImages/img${obj.productId}.jpg`}
+                            src={`../../images/homeImages/img${obj.productId}.png`}
                         />
                     </div>
                 );

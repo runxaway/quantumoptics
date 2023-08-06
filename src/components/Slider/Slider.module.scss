@@ -221,8 +221,13 @@
         }
 
         .SlideActive {
-            transition: opacity ease-in-out 1s;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+
             opacity: 1;
+            transition: opacity ease-in-out 1s;
         }
 
     }
