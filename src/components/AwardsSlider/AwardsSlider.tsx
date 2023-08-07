@@ -20,9 +20,16 @@ type AwardsSliderProps = {
 export function AwardsSlider(props: AwardsSliderProps): JSX.Element {
     const awards = [award0, award1, award2, award3, award4, award5, award6, award7, award8, award9];
 
+    const onWheel = (e: any) => {
+        const container = document.querySelector(`.${styles.AwardsContainer}`);
+        container?.scrollBy({
+            left: e.deltaY < 0 ? -30 : 30,
+        });
+    };
+
     return (
         <div className={styles.BorderBox}>
-            <ul className={styles.AwardsContainer}>
+            <ul className={styles.AwardsContainer} onWheel={onWheel}>
                 {Array.from(Array(props.arrN).keys()).map((i) => {
                     return (
                         <li

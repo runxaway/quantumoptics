@@ -28,7 +28,7 @@ const Contacts = (): JSX.Element => {
                             </div>
                             <div className={styles.TextWrapper}>
                                 <div className={styles.TextLabel}>Почтовый адрес:</div>
-                                <div className={styles.TextAbout}>199178, г. Санкт-Петербург, 15 линия ВО, д.12, к. А</div>
+                                <div className={styles.TextAbout}>197342, Санкт-Петербург, Белоостровская, 22, офис 415</div>
                             </div>
                         </div>
                         <div className={styles.MapBlock}>
