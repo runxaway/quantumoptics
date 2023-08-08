@@ -65,7 +65,7 @@
 
     .Block {
         color: white;
-        height: 973px;
+        height: 67.569vw;
         border-radius: 1.041666vw;
         background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
         // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
@@ -92,11 +92,11 @@
 
 
         .TopBlockWrapper {
-            padding: 45px 45px 0;
+            padding: 3.125vw 3.125vw 0;
             display: flex;
 
             .AboutUsBlock {
-                width: 456px;
+                width: 31.66vw;
                 // height: 411px;
                 border-radius: 1.041vw;
                 background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
@@ -120,17 +120,17 @@
 
                 .TextWrapper {
                     // height: 82px;
-                    width: 403px;
-                    margin: 27px 27px 24px 27px;
+                    width: 27.986vw;
+                    margin: 1.875vw 1.875vw 1.66vw 1.875vw;
 
                     .TextLabel {
                         display: flex;
-                        margin-bottom: 10px;
-                        width: 170px;
-                        height: 24px;
+                        margin-bottom: 0.694vw;
+                        width: 11.80vw;
+                        height: 1.66vw;
                         color: rgba(255, 255, 255, 0.95);
                         font-family: 'Roboto', sans-serif;
-                        font-size: 20px;
+                        font-size: 1.388vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
@@ -139,7 +139,7 @@
                     .TextAbout {
                         color: rgba(255, 255, 255, 0.9);
                         font-family: 'Roboto', sans-serif;
-                        font-size: 20px;
+                        font-size: 1.388vw;
                         font-style: normal;
                         font-weight: 100;
                         line-height: normal;
@@ -148,8 +148,8 @@
             }
             
             .MapBlock {
-                margin-left: 45px;
-                width: 665px;
+                margin-left: 3.125vw;
+                width: 46.180vw;
                 // height: 411px;
                 border-radius: 1.041vw;
                 background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
@@ -173,9 +173,9 @@
                 }
 
                 .MapBorder {
-                    margin: 30px;
-                    height: 361px;
-                    border-radius: 20px;
+                    margin: 2.083vw;
+                    height: 25.069vw;
+                    border-radius: 1.38vw;
                     border: 0.104vw solid rgba(255, 255, 255, 0.1);
                     overflow: hidden;
 
@@ -191,9 +191,9 @@
         }
 
         .BottomBlock {
-            margin: 45px;
+            margin: 3.125vw;
             // width: 665px;
-            height: 421px;
+            height: 29.23vw;
             border-radius: 1.041vw;
             background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
             box-shadow: 0.138vw 0.138vw 0.34722vw 0 rgba(0, 0, 0, 0.10);
@@ -217,11 +217,11 @@
             }
 
             .ContactImageBorder {
-                width: 489px;
-                height: 367px;
-                margin: 30px;
-                height: 361px;
-                border-radius: 20px;
+                width: 33.958vw;
+                height: 25.48vw;
+                margin: 2.08vw;
+                height: 25.069vw;
+                border-radius: 1.38vw;
                 border: 0.104vw solid rgba(255, 255, 255, 0.1);
                 overflow: hidden;
 
@@ -233,11 +233,11 @@
 
             .ContactText {
                 color: rgba(255, 255, 255, 0.95);
-                margin: 35px 30px 30px 30px;
-                width: 593px;
-                height: 380px;
+                margin: 2.43vw 2.083vw 2.083vw 2.083vw;
+                width: 41.18vw;
+                height: 26.38vw;
                 font-family: 'Roboto', sans-serif;
-                font-size: 16px;
+                font-size: 1.111vw;
                 font-style: normal;
                 font-weight: 100;
                 line-height: normal;
