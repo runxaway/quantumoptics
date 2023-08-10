@@ -1,0 +1,50 @@
+.HeaderMenu {
+    width: 100vw;
+    // height: 70px;
+    // height: 10.861vw;
+    height: 13.28vw;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 0.0694vw solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.05) 100%);
+    // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0.1388vw 0.1388vw 0.277vw 0 rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position: fixed;
+    display: flex;
+    z-index: 5;
+
+    .Logo {
+        // margin-top: 21px;
+        margin-top: 20px;
+        // margin-left: 91px;
+        margin-left: 15px;
+        // width: 203px;
+        width: 120px;
+        // height: 30px;
+        height: 20px;
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+        // font-size: 24px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .Adress {
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+        // font-size: 16px;
+        font-size: 8.5px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 141.523%;
+        margin-left: 15px;
+        margin-top: 18px;
+        // width: 168px;
+        height: 22px;
+        opacity: 0.8;
+    }
+}

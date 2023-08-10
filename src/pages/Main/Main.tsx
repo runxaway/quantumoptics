@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from 'react-router';
 
 import { ROUTES } from '../../constants/Routes';
@@ -13,23 +13,45 @@ import SubProducts from '../Products/SubProducts/SubProducts';
 import AboutProduct from '../Products/AboutProduct/AboutProduct';
 import Publications from '../Publications/Publications';
 import Contacts from '../Contacts/Contacts';
+import HomeMobile from "@pages/HomeMobile/HomeMobile";
+import { HeaderMobile } from "@components/HeaderMobile/HeaderMobile";
 
 const Main = (): JSX.Element => {
+
     return (
         <>
-            <Header />
-            <div className={styles.BackgroundBlur}>
-            <Routes>
-                <Route path={ROUTES.HOME.END} element={<Home />} />
-
-                <Route path={ROUTES.PRODUCTS.END} element={<Products />} />
-                <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProducts />} />
-                <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProduct />} />
-                
-                <Route path={ROUTES.PUBLICATIONS.END} element={<Publications />} />
-                <Route path={ROUTES.CONTACTS.END} element={<Contacts />} />
-            </Routes>
-            </div>
+            {window.outerWidth < 420 ?
+                <>
+                    <HeaderMobile />
+                    <div className={styles.BackgroundBlurMobile}>
+                        <Routes>
+                            <Route path={ROUTES.HOME.END} element={<HomeMobile />} />
+            
+                            <Route path={ROUTES.PRODUCTS.END} element={<Products />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProducts />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProduct />} />
+                            
+                            <Route path={ROUTES.PUBLICATIONS.END} element={<Publications />} />
+                            <Route path={ROUTES.CONTACTS.END} element={<Contacts />} />
+                        </Routes>
+                    </div>
+                </> :
+                <>
+                    <Header />
+                    <div className={styles.BackgroundBlur}>
+                        <Routes>
+                            <Route path={ROUTES.HOME.END} element={<Home />} />
+            
+                            <Route path={ROUTES.PRODUCTS.END} element={<Products />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProducts />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProduct />} />
+                            
+                            <Route path={ROUTES.PUBLICATIONS.END} element={<Publications />} />
+                            <Route path={ROUTES.CONTACTS.END} element={<Contacts />} />
+                        </Routes>
+                    </div>
+                </>
+            }
         </>
     );
 };
