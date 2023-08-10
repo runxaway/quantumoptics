@@ -34,7 +34,8 @@
     }
 
     .ProdText {
-        padding: 0.833vw 1.8055vw;
+        color: rgba(255, 255, 255, 0.8);
+        padding: 0.533vw 1.8055vw;
         // min-width: 4.861vw;
         min-height: 2.361vw;
         text-align: left;
@@ -42,6 +43,7 @@
         font-size: 1.25vw;
         font-style: normal;
         font-weight: 300;
+        line-height: 1.2;
     }
 }
 
@@ -80,13 +82,15 @@
     }
 
     .ProdText {
-        padding: 0.833vw 1.8055vw;
+        color: rgba(255, 255, 255, 1);
+        padding: 0.533vw 1.8055vw;
         // min-width: 4.861vw;
         min-height: 2.361vw;
         text-align: left;
         font-family: 'Roboto', sans-serif;
         font-size: 1.25vw;
         font-style: normal;
+        line-height: 1.2;
         font-weight: 300;
     }
 }
