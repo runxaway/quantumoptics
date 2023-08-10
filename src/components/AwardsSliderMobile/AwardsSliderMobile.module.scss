@@ -1,0 +1,70 @@
+.BorderBox {
+    // width: 349px;
+    height: 185px;
+    border-radius: 15px;
+    background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: calc(-1px);
+        
+        border-radius: 16px;
+        padding: 1px;
+        background: linear-gradient(100deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: calc(-1px);
+        
+        border-radius: 16px;
+        padding: 1px;
+        background: linear-gradient(-20deg, rgb(255, 255, 255, 0.30), rgb(255, 255, 255, 0));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    .AwardsContainer {
+        // width: 1100px;
+        width: 320px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        position: relative;
+        overflow-x: auto;
+        overscroll-behavior-y: contain;
+        mask: linear-gradient(black, black, transparent);
+        backdrop-filter: blur(25px);
+        -webkit-mask: linear-gradient(90deg,  transparent, black 20%, black 80%, transparent);
+        z-index: 4;
+
+        .Award {
+            // margin: 0 50px;
+            margin: 0 20px;
+            cursor: pointer;
+
+            .AwardImage {
+                // width: 13.47222vw;
+                height: 145px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

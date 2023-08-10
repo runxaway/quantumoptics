@@ -6,6 +6,7 @@ import { ROUTES } from '../../constants/Routes';
 import styles from './Main.module.scss';
 
 import { Header } from '../../components/Header/Header';
+import { HeaderMobile } from "../../components/HeaderMobile/HeaderMobile";
 
 import Home from '../Home/Home';
 import Products from '../Products/Products';
@@ -13,8 +14,8 @@ import SubProducts from '../Products/SubProducts/SubProducts';
 import AboutProduct from '../Products/AboutProduct/AboutProduct';
 import Publications from '../Publications/Publications';
 import Contacts from '../Contacts/Contacts';
-import HomeMobile from "@pages/HomeMobile/HomeMobile";
-import { HeaderMobile } from "@components/HeaderMobile/HeaderMobile";
+
+import HomeMobile from "../HomeMobile/HomeMobile";
 
 const Main = (): JSX.Element => {
 

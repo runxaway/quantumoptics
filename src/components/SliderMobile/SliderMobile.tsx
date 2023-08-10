@@ -32,7 +32,7 @@ export function SliderMobile(): JSX.Element {
             setIndex(
                 index === data.Products.length - 1 ? 0 : index + 1
             ),
-        2500
+        4500
         );
 
         return () => {
@@ -93,38 +93,6 @@ export function SliderMobile(): JSX.Element {
                     })}
                 </ul>
             </div>
-            {/* <div className={styles.BorderBox}>
-                <ul className={styles.ButtonsWrapper}>
-                    {data.Products.map((obj, i) => {
-                        return (
-                            <Link
-                                key={obj.productId}
-                                to={{
-                                    pathname: ROUTES.PRODUCTS.$(obj.productId).END
-                                }}
-                            >
-                                <li
-                                    key={obj.productId}
-                                    className={index === i ? styles.BoxActive : styles.Box}
-                                >
-                                    <div className={styles.ButtonName}>
-                                        {obj.productName}
-                                    </div>
-                                </li>
-                            </Link>
-                        );
-                    })}
-                </ul>
-                <div className={styles.Line}></div>
-                <div className={styles.PopUpActive}>
-                    <div className={styles.PopUpName}>
-                        {data.Products[index].productName}
-                    </div>
-                    <div className={styles.PopUpText}>
-                        {data.Products[index].productText}
-                    </div>
-                </div>
-            </div> */}
         </>
     );
 }

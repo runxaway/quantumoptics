@@ -3,7 +3,7 @@ import React from "react";
 import styles from './HomeMobile.module.scss';
 
 import { SliderMobile } from "../../components/SliderMobile/SliderMobile";
-import { AwardsSlider } from "../../components/AwardsSlider/AwardsSlider";
+import { AwardsSliderMobile } from "../../components/AwardsSliderMobile/AwardsSliderMobile";
 
 const HomeMobile = (): JSX.Element => {
     window.scrollTo(0, 0);
@@ -17,7 +17,7 @@ const HomeMobile = (): JSX.Element => {
                 <div className={styles.Label}>Награды</div>
             </div>
             <div className={styles.SecondBlock}>
-                <AwardsSlider arrN={10} />
+                <AwardsSliderMobile arrN={10} />
             </div>
             <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
         </div>
