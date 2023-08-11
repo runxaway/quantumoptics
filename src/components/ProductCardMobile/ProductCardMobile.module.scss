@@ -1,0 +1,71 @@
+.CardBlock {
+    position: relative;
+    width: 330px;
+    height: 270px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.15);
+    // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0.1388vw 0.1388vw 0.2777vw 0 rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    z-index: 2;
+    transition: background ease 400ms;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: calc(-1px);
+        transition: opacity 700ms ease;
+        
+        border-radius: 12px;
+        padding: 1px;
+        background: linear-gradient(0deg, rgb(255, 255, 255, 0.35), rgb(255, 255, 255, 0.25));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    .ProdImageContainer {
+        width: 290px;
+        height: 190px;
+        margin: 15px 20px 8px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        object-fit: cover;
+        overflow: hidden;
+        justify-content: center;
+        display: flex;
+        transition: border ease 400ms;
+
+        .ProdImage {
+            opacity: 0.95;
+            height: 190px;
+        }
+    }
+
+    .ProdTextBox {
+        min-width: 100px;
+        height: 40px;
+        margin: 0 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0.1388vw 0.1388vw 0.2777vw 0 rgba(0, 0, 0, 0.05);
+        color: rgba(255, 255, 255, 0.80);
+        position: relative;
+        z-index: 2;
+        transition: (border, color, background) ease 400ms;
+    
+        .ProdText {
+            margin: 12px 0;
+            min-width: 100px;
+            height: 18px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+        }
+    }
+}

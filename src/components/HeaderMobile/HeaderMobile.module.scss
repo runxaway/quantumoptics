@@ -16,17 +16,17 @@
 
     .Logo {
         // margin-top: 21px;
-        margin-top: 20px;
+        margin-top: 18px;
         // margin-left: 91px;
         margin-left: 15px;
         // width: 203px;
-        width: 120px;
+        width: 130px;
         // height: 30px;
         height: 20px;
         color: #FFF;
         font-family: 'Roboto', sans-serif;
         // font-size: 24px;
-        font-size: 14px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -37,14 +37,123 @@
         color: #FFF;
         font-family: 'Roboto', sans-serif;
         // font-size: 16px;
-        font-size: 8.5px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: 141.523%;
         margin-left: 15px;
-        margin-top: 18px;
+        margin-top: 15px;
         // width: 168px;
         height: 22px;
         opacity: 0.8;
+    }
+
+    .BurgerMenu {
+        width: 36px;
+        height: 34px;
+        position: relative;
+        border-radius: 8px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.02));
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+        margin-top: 9.5px;
+        margin-left: 18px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: calc(-1px);
+            
+            border-radius: 9px;
+            padding: 1px;
+            background: linear-gradient(0deg, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.15));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        .Lines {
+            padding: 8px;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .BurgerMenuActive {
+        width: 36px;
+        height: 34px;
+        position: relative;
+        border-radius: 8px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.09));
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+        margin-top: 9.5px;
+        margin-left: 18px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: calc(-1px);
+            
+            border-radius: 9px;
+            padding: 1px;
+            background: linear-gradient(0deg, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.25));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        .Lines {
+            padding: 8px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .MenuBlock {
+        width: 100vw;
+        height: 0vh;
+        margin-top: 55px;
+        position: fixed;
+        background: linear-gradient(0deg, rgb(255, 255, 255, 0.08), rgb(255, 255, 255, 0.05));
+        border-bottom: 0.0694vw solid rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+        transition: height 400ms ease-out;
+        overflow: hidden;
+
+        .MenuButtonWrapper {
+            margin-top: 2.5vh;
+            padding: 0 40px;
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .MenuBlockActive {
+        width: 100vw;
+        height: 9vh;
+        margin-top: 55px;
+        position: fixed;
+        background: linear-gradient(0deg, rgb(255, 255, 255, 0.08), rgb(255, 255, 255, 0.05));
+        border-bottom: 0.0694vw solid rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+        transition: height 300ms ease-in-out;
+        overflow: hidden;
+
+        .MenuButtonWrapper {
+            margin-top: 2.5vh;
+            padding: 0 40px;
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }

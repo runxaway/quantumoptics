@@ -16,6 +16,8 @@ import Publications from '../Publications/Publications';
 import Contacts from '../Contacts/Contacts';
 
 import HomeMobile from "../HomeMobile/HomeMobile";
+import ProductsMobile from "../ProductsMobile/ProductsMobile";
+import SubProductsMobile from "../ProductsMobile/SubProductsMobile/SubProductsMobile";
 
 const Main = (): JSX.Element => {
 
@@ -28,8 +30,8 @@ const Main = (): JSX.Element => {
                         <Routes>
                             <Route path={ROUTES.HOME.END} element={<HomeMobile />} />
             
-                            <Route path={ROUTES.PRODUCTS.END} element={<Products />} />
-                            <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProducts />} />
+                            <Route path={ROUTES.PRODUCTS.END} element={<ProductsMobile />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProductsMobile />} />
                             <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProduct />} />
                             
                             <Route path={ROUTES.PUBLICATIONS.END} element={<Publications />} />

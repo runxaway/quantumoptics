@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
 import { ROUTES } from '../../constants/Routes';
 
 import styles from './HeaderMobile.module.scss'
-import { MenuButton } from "../MenuButton/MenuButton";
+
+import { MenuButtonMobile } from "../MenuButtonMobile/MenuButtonMobile";
+
+import lines from '../../images/LinesBurger.svg';
+import close from '../../images/close.svg';
 
 export function HeaderMobile(): JSX.Element {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div className={styles.HeaderMenu}>
             <div className={styles.Logo}>
@@ -29,20 +35,33 @@ export function HeaderMobile(): JSX.Element {
                     </li>
                 </ul>
             </div>
-            {/* <div className={styles.MenuButtonWrapper}>
-                <MenuButton
-                    label='Продукция'
-                    href={'products'}
+            <div
+                className={isOpen ? styles.BurgerMenuActive : styles.BurgerMenu}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                <img
+                    className={styles.Lines}
+                    src={isOpen ? close : lines}
                 />
-                <MenuButton
-                    label="Публикации"
-                    href={'publications'}
-                />
-                <MenuButton
-                    label="Контакты"
-                    href={'contacts'}
-                />
-            </div> */}
+            </div>
+            <div
+                className={isOpen ? styles.MenuBlockActive : styles.MenuBlock}
+            >
+                <div className={styles.MenuButtonWrapper} onClick={() => setIsOpen(!isOpen)}>
+                    <MenuButtonMobile
+                        label='Продукция'
+                        href={'products'}
+                    />
+                    <MenuButtonMobile
+                        label="Публикации"
+                        href={'publications'}
+                    />
+                    <MenuButtonMobile
+                        label="Контакты"
+                        href={'contacts'}
+                    />
+                </div>
+            </div>
         </div>
     );
 }
