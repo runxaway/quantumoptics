@@ -6,15 +6,11 @@
         display: flex;
         
         .ProdLabel {
-            // width: 346px;
-            // width: 24.0277vw;
             max-width: 450px;
-            // height: 54px;
             height: 35px;
             margin-bottom: 20px;
             margin-left: 6px;
 
-            // border-radius: 15px;
             border-radius: 10px;
             background: linear-gradient(308deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.03) 100%);
             box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
@@ -163,11 +159,8 @@
 }
 
 .Copy {
-    // margin-left: 117px;
     padding-top: 50px;
     padding-bottom: 20px;
-    // width: 274px;
-    // height: 17px;
     color: #FFF;
     text-align: center;
     font-family: 'Roboto', sans-serif;

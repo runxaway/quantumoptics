@@ -1,5 +1,4 @@
 .BorderBox {
-    // width: 349px;
     height: 185px;
     border-radius: 15px;
     background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
@@ -37,7 +36,6 @@
     }
 
     .AwardsContainer {
-        // width: 1100px;
         width: 320px;
         padding: 20px;
         display: flex;
@@ -52,12 +50,10 @@
         z-index: 4;
 
         .Award {
-            // margin: 0 50px;
             margin: 0 20px;
             cursor: pointer;
 
             .AwardImage {
-                // width: 13.47222vw;
                 height: 145px;
                 object-fit: cover;
             }

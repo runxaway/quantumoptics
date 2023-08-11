@@ -4,11 +4,9 @@
     height: 270px;
     border-radius: 11px;
     background: rgba(255, 255, 255, 0.15);
-    // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
-    box-shadow: 0.1388vw 0.1388vw 0.2777vw 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
     cursor: pointer;
     z-index: 2;
-    transition: background ease 400ms;
 
     &::before {
         content: "";
@@ -55,7 +53,6 @@
         color: rgba(255, 255, 255, 0.80);
         position: relative;
         z-index: 2;
-        transition: (border, color, background) ease 400ms;
     
         .ProdText {
             margin: 12px 0;
