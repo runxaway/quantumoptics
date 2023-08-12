@@ -59,7 +59,7 @@
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
         position: relative;
         padding: 0 15px;
-        height: 925px;
+        height: 1095px;
 
         &::before {
             content: "";
@@ -181,13 +181,13 @@
         .BottomBlock {
             margin: 15px 0;
             // width: 665px;
-            height: 300px;
+            height: 465px;
             border-radius: 10px;
             background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
             box-shadow: 0.138vw 0.138vw 0.34722vw 0 rgba(0, 0, 0, 0.10);
             backdrop-filter: blur(25px);
             position: relative;
-            display: flex;
+            display:grid;
 
             &::before {
                 content: "";
@@ -205,12 +205,12 @@
             }
 
             .ContactImageBorder {
-                width: 33.958vw;
-                height: 25.48vw;
-                margin: 2.08vw;
-                height: 25.069vw;
-                border-radius: 1.38vw;
-                border: 0.104vw solid rgba(255, 255, 255, 0.1);
+                margin-left: 30px;
+                margin-top: 10px;
+                width: 280px;
+                height: 190px;
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
                 overflow: hidden;
 
                 .ContactImage {
@@ -221,14 +221,17 @@
 
             .ContactText {
                 color: rgba(255, 255, 255, 0.95);
-                margin: 2.43vw 2.083vw 2.083vw 2.083vw;
-                width: 41.18vw;
-                height: 26.38vw;
+                margin: 10px 20px;
+                width: 300px;
                 font-family: 'Roboto', sans-serif;
-                font-size: 1.111vw;
+                font-size: 10px;
                 font-style: normal;
-                font-weight: 100;
-                line-height: normal;
+                font-weight: 300;
+                line-height: 1.1;
+
+                p {
+                    text-indent: 20px;
+                }
             }
         }
     }
@@ -253,10 +256,6 @@
     line-height: normal;
 }
 
-[class*="copyrights-pane"] {
-	display: none !important;
-}
-
 [class*="ground-pane"] {
-	filter: grayscale(1);
+	filter: grayscale(1) invert(1);
 }
