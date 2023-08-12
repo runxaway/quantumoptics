@@ -18,7 +18,7 @@ import Contacts from '../Contacts/Contacts';
 import HomeMobile from "../HomeMobile/HomeMobile";
 import ProductsMobile from "../ProductsMobile/ProductsMobile";
 import SubProductsMobile from "../ProductsMobile/SubProductsMobile/SubProductsMobile";
-
+import AboutProductMobile from "../ProductsMobile/AboutProductMobile/AboutProductMobile";
 import PublicationsMobile from "../PublicationsMobile/PublicationsMobile";
 import ContactsMobile from "../ContactsMobile/ContactsMobile";
 
@@ -35,7 +35,7 @@ const Main = (): JSX.Element => {
             
                             <Route path={ROUTES.PRODUCTS.END} element={<ProductsMobile />} />
                             <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProductsMobile />} />
-                            <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProduct />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProductMobile />} />
                             
                             <Route path={ROUTES.PUBLICATIONS.END} element={<PublicationsMobile />} />
                             <Route path={ROUTES.CONTACTS.END} element={<ContactsMobile />} />

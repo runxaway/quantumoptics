@@ -663,88 +663,88 @@
                         },
                         {
                             "elemId": "6",
-                            "elemName": "Тип излучателя",
-                            "elemValue": ["твердотельный лазер с диодной накачкой"]
-                        },
-                        {
-                            "elemId": "7",
                             "elemName": "Рабочая длина волны, нм",
                             "elemValue": ["532"]
                         },
                         {
-                            "elemId": "8",
+                            "elemId": "7",
                             "elemName": "Энергия излучения, мДж",
                             "elemValue": ["30"]
                         },
                         {
-                            "elemId": "9",
+                            "elemId": "8",
                             "elemName": "Длительность импульса, нс",
                             "elemValue": ["10"]
                         },
                         {
-                            "elemId": "10",
+                            "elemId": "9",
                             "elemName": "Модуляция",
                             "elemValue": ["пассивная"]
                         },
                         {
-                            "elemId": "11",
+                            "elemId": "10",
                             "elemName": "Частота следования импульсов, Гц",
                             "elemValue": ["1…25"]
                         },
                         {
-                            "elemId": "12",
+                            "elemId": "11",
                             "elemName": "Расходимость излучения, мрад",
                             "elemValue": ["1"]
                         },
                         {
-                            "elemId": "13",
+                            "elemId": "12",
                             "elemName": "Диаметр передающего телескопа, мм",
                             "elemValue": ["20"]
                         },
                         {
-                            "elemId": "14",
+                            "elemId": "13",
                             "elemName": "Диаметр приемного объектива, мм",
                             "elemValue": ["50"]
                         },
                         {
-                            "elemId": "15",
+                            "elemId": "14",
                             "elemName": "Частота оцифровки, МГц",
                             "elemValue": ["500"]
                         },
                         {
-                            "elemId": "16",
+                            "elemId": "15",
                             "elemName": "Разрядность АЦП",
                             "elemValue": ["12"]
                         },
                         {
-                            "elemId": "17",
+                            "elemId": "16",
                             "elemName": "Выборок в одном измерении",
                             "elemValue": ["2000"]
                         },
                         {
-                            "elemId": "18",
+                            "elemId": "17",
                             "elemName": "Интерфейс*",
                             "elemValue": ["Ethernet*"]
                         },
                         {
-                            "elemId": "19",
+                            "elemId": "18",
                             "elemName": "Электропитание, В",
                             "elemValue": ["23 - 30"]
                         },
                         {
-                            "elemId": "20",
+                            "elemId": "19",
                             "elemName": "Потребляемая мощность, Вт",
                             "elemValue": ["150"]
                         },
                         {
-                            "elemId": "21",
+                            "elemId": "20",
                             "elemName": "Охлаждение",
                             "elemValue": ["воздушное"]
                         },
                         {
-                            "elemId": "22",
+                            "elemId": "21",
                             "elemName": "Габаритные размеры, мм",
                             "elemValue": ["210х130х65"]
+                        },
+                        {
+                            "elemId": "22",
+                            "elemName": "Вес, кг",
+                            "elemValue": ["1.5"]
                         },
                         {
                             "elemId": "23",
@@ -753,21 +753,16 @@
                         },
                         {
                             "elemId": "24",
-                            "elemName": "Вес, кг",
-                            "elemValue": ["1.5"]
-                        },
-                        {
-                            "elemId": "25",
                             "elemName": "Диапазон рабочих температур, °С",
                             "elemValue": ["-50…+55"]
                         },
                         {
-                            "elemId": "26",
+                            "elemId": "25",
                             "elemName": "Ударопрочность",
                             "elemValue": ["15g (5 мс)"]
                         },
                         {
-                            "elemId": "27",
+                            "elemId": "26",
                             "elemName": "Виброустойчивость",
                             "elemValue": ["3g (60 – 2000 Гц)"]
                         }

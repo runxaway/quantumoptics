@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from 'react-router';
 import { useNavigate } from 'react-router-dom';
 
-import styles from './AboutProduct.module.scss';
+import styles from './AboutProductMobile.module.scss';
 
 import s00 from '../../../images/subproducts/00.png';
 import s01 from '../../../images/subproducts/01.png';
@@ -20,7 +20,7 @@ import s30 from '../../../images/subproducts/30.png';
 
 import data from '../../../products.json';
 
-const AboutProduct = (): JSX.Element => {
+const AboutProductMobile = (): JSX.Element => {
     window.scrollTo(0, 0);
     const navigate = useNavigate();
 
@@ -87,10 +87,10 @@ const AboutProduct = (): JSX.Element => {
                         </tbody>
                     </table>
                 </div>
+                <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
             </div>
-            <div className={styles.Copy}>ООО «Квантовая оптика» Copyright © 2023</div>
         </>
     );
 }
 
-export default AboutProduct;
+export default AboutProductMobile;
