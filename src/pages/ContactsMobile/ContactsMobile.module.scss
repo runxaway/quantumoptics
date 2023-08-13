@@ -1,13 +1,13 @@
 .СontactsBody {
-    padding: 80px 20px 0;
+    padding: 19.323vw 4.83vw 0;
 
     .ProdLabel {
-        width: 158px;
-        height: 35px;
-        margin-bottom: 20px;
-        margin-left: 6px;
+        width: 38.164vw;
+        height: 8.454vw;
+        margin-bottom: 4.83vw;
+        margin-left: 1.449vw;
 
-        border-radius: 10px;
+        border-radius: 2.415vw;
         background: linear-gradient(308deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.03) 100%);
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
         backdrop-filter: blur(25px);
@@ -16,10 +16,10 @@
         &::before {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.241vw);
             
-            border-radius: 11px;
-            padding: 1px;
+            border-radius: 2.657vw;
+            padding: 0.241vw;
             background: linear-gradient(-100deg, rgb(255, 255, 255, 0.35), rgb(255, 255, 255, 0));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -30,10 +30,10 @@
         &::after {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.241vw);
             
-            border-radius: 11px;
-            padding: 1px;
+            border-radius: 2.657vw;
+            padding: 0.241vw;
             background: linear-gradient(20deg, rgb(255, 255, 255, 0.10), rgb(255, 255, 255, 0));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -42,11 +42,11 @@
         }
 
         .Name {
-            padding-top: 8px;
+            padding-top: 1.932vw;
             color: rgba(255, 255, 255, 0.95);
             text-align: center;
             font-family: 'Roboto', sans-serif;
-            font-size: 16px;
+            font-size: 3.864vw;
             font-style: normal;
             font-weight: 300;
             line-height: normal;
@@ -54,20 +54,20 @@
     }
 
     .Block {
-        border-radius: 8px;
+        border-radius: 1.932vw;
         background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
         position: relative;
-        padding: 0 15px;
-        height: 1095px;
+        padding: 0 3.623vw;
+        height: 264.49vw;
 
         &::before {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.241vw);
             
-            border-radius: 9px;
-            padding: 1px;
+            border-radius: 2.173vw;
+            padding: 0.241vw;
             background: linear-gradient(100deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0.2));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -75,15 +75,14 @@
             mask-composite: exclude;
         }
 
-
         .TopBlockWrapper {
-            padding: 15px 0px 15px;
+            padding: 3.623vw 0 3.623vw;
 
             .AboutUsBlock {
-                width: 340px;
-                padding: 15px 20px;
+                width: 82.12vw;
+                padding: 3.623vw 4.83vw;
                 // height: 411px;
-                border-radius: 10px;
+                border-radius: 2.415vw;
                 background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
                 box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
                 backdrop-filter: blur(25px);
@@ -92,10 +91,10 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    inset: calc(-1px);
+                    inset: calc(-0.241vw);
                     
-                    border-radius: 11px;
-                    padding: 1px;
+                    border-radius: 2.657vw;
+                    padding: 0.241vw;
                     background: linear-gradient(136deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0.3));
                     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -104,27 +103,27 @@
                 }
 
                 .TextWrapper {
-                    width: 190px;
+                    width: 45.89vw;
 
                     .TextLabel {
                         display: flex;
-                        margin-bottom: 10px;
-                        width: 190px;
-                        height: 16px;
+                        margin-bottom: 2.415vw;
+                        width: 45.89vw;
+                        height: 3.864vw;
                         color: rgba(255, 255, 255, 0.95);
                         font-family: 'Roboto', sans-serif;
-                        font-size: 16px;
+                        font-size: 3.864vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
                     }
     
                     .TextAbout {
-                        margin-bottom: 10px;
+                        margin-bottom: 2.415vw;
                         color: rgba(255, 255, 255, 0.9);
-                        width: 290px;
+                        width: 70.04vw;
                         font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
+                        font-size: 3.381vw;
                         font-style: normal;
                         font-weight: 300;
                         line-height: normal;
@@ -134,10 +133,10 @@
         }
 
         .MapBlock {
-            width: 340px;
-            padding: 10px 10px;
-            height: 300px;
-            border-radius: 10px;
+            width: 82.12vw;
+            padding: 2.415vw 2.415vw;
+            height: 72.46vw;
+            border-radius: 2.415vw;
             background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
             box-shadow: 0.138vw 0.138vw 0.34722vw 0 rgba(0, 0, 0, 0.10);
             backdrop-filter: blur(25px);
@@ -147,10 +146,10 @@
             &::before {
                 content: "";
                 position: absolute;
-                inset: calc(-1px);
+                inset: calc(-0.241vw);
                 
-                border-radius: 11px;
-                padding: 1px;
+                border-radius: 2.657vw;
+                padding: 0.241vw;
                 background: linear-gradient(136deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0.3));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -160,15 +159,13 @@
             }
 
             .MapBorder {
-                // display: flex;
-                width: 340px;
-                height: 280px;
+                width: 82.12vw;
+                height: 67.62vw;
                 border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.1);
+                border: 0.241vw solid rgba(255, 255, 255, 0.1);
                 overflow: hidden;
 
                 .Map {
-                    // padding: 15px;
                     width: 100%;
                     height: 100%;
                     z-index: 1;
@@ -178,10 +175,9 @@
         }
 
         .BottomBlock {
-            margin: 15px 0;
-            // width: 665px;
-            height: 465px;
-            border-radius: 10px;
+            margin: 3.623vw 0;
+            height: 112.31vw;
+            border-radius: 2.415vw;
             background: linear-gradient(-90deg, rgba(217, 217, 217, 0.20) 0%, rgba(217, 217, 217, 0.10) 100%);
             box-shadow: 0.138vw 0.138vw 0.34722vw 0 rgba(0, 0, 0, 0.10);
             backdrop-filter: blur(25px);
@@ -191,10 +187,10 @@
             &::before {
                 content: "";
                 position: absolute;
-                inset: calc(-1px);
+                inset: calc(-0.241vw);
                 
-                border-radius: 11px;
-                padding: 1px;
+                border-radius: 2.657vw;
+                padding: 0.241vw;
                 background: linear-gradient(136deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0.4));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -204,12 +200,12 @@
             }
 
             .ContactImageBorder {
-                margin-left: 30px;
-                margin-top: 10px;
-                width: 280px;
-                height: 190px;
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.1);
+                margin-left: 7.24vw;
+                margin-top: 2.415vw;
+                width: 67.63vw;
+                height: 45.89vw;
+                border-radius: 2.415vw;
+                border: 0.241vw solid rgba(255, 255, 255, 0.1);
                 overflow: hidden;
 
                 .ContactImage {
@@ -220,16 +216,16 @@
 
             .ContactText {
                 color: rgba(255, 255, 255, 0.95);
-                margin: 10px 20px;
-                width: 300px;
+                margin: 2.415vw 4.83vw;
+                width: 72.46vw;
                 font-family: 'Roboto', sans-serif;
-                font-size: 10px;
+                font-size: 2.41vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 1.1;
 
                 p {
-                    text-indent: 15px;
+                    text-indent: 3.623vw;
                 }
             }
         }
@@ -237,12 +233,12 @@
 }
 
 .Copy {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 12.07vw;
+    padding-bottom: 4.83vw;
     color: #FFF;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 8px;
+    font-size: 1.932vw;
     font-style: normal;
     font-weight: 300;
     line-height: normal;

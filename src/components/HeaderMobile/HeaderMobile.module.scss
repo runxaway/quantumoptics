@@ -3,8 +3,7 @@
     height: 13.28vw;
     border-bottom: 0.0694vw solid rgba(255, 255, 255, 0.20);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.05) 100%);
-    // box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
-    box-shadow: 0.1388vw 0.1388vw 0.277vw 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     position: fixed;
@@ -12,13 +11,13 @@
     z-index: 5;
 
     .Logo {
-        margin-top: 18px;
-        margin-left: 15px;
-        width: 130px;
-        height: 20px;
+        margin-top: 4.34vw;
+        margin-left: 3.623vw;
+        width: 31.4vw;
+        height: 4.83vw;
         color: #FFF;
         font-family: 'Roboto', sans-serif;
-        font-size: 15px;
+        font-size: 3.623vw;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -28,33 +27,33 @@
     .Adress {
         color: #FFF;
         font-family: 'Roboto', sans-serif;
-        font-size: 10px;
+        font-size: 2.415vw;
         font-style: normal;
         font-weight: 400;
         line-height: 141.523%;
-        margin-left: 15px;
-        margin-top: 15px;
-        height: 22px;
+        margin-left: 3.623vw;
+        margin-top: 3.623vw;
+        height: 5.314vw;
         opacity: 0.8;
     }
 
     .BurgerMenu {
-        width: 36px;
-        height: 34px;
+        width: 8.695vw;
+        height: 8.212vw;
         position: relative;
-        border-radius: 8px;
+        border-radius: 1.932vw;
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.02));
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
-        margin-top: 9.5px;
-        margin-left: 18px;
+        margin-top: 2.294vw;
+        margin-left: 4.347vw;
 
         &::before {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.241vw);
             
-            border-radius: 9px;
-            padding: 1px;
+            border-radius: 2.173vw;
+            padding: 0.241vw;
             background: linear-gradient(0deg, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.15));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -63,7 +62,7 @@
         }
 
         .Lines {
-            padding: 8px;
+            padding: 1.932vw;
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
@@ -71,22 +70,22 @@
     }
 
     .BurgerMenuActive {
-        width: 36px;
-        height: 34px;
+        width: 8.695vw;
+        height: 8.212vw;
         position: relative;
-        border-radius: 8px;
+        border-radius: 1.932vw;
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.09));
-        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
-        margin-top: 9.5px;
-        margin-left: 18px;
+        // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+        margin-top: 2.294vw;
+        margin-left: 4.347vw;
 
         &::before {
             content: "";
             position: absolute;
-            inset: calc(-1px);
+            inset: calc(-0.241vw);
             
-            border-radius: 9px;
-            padding: 1px;
+            border-radius: 2.173vw;
+            padding: 0.241vw;
             background: linear-gradient(0deg, rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.25));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -95,7 +94,7 @@
         }
 
         .Lines {
-            padding: 8px;
+            padding: 1.932vw;
             width: 100%;
             height: 100%;
         }
@@ -104,7 +103,7 @@
     .MenuBlock {
         width: 100vw;
         height: 0vh;
-        margin-top: 55px;
+        margin-top: 13.28vw;
         position: fixed;
         background: linear-gradient(0deg, rgb(255, 255, 255, 0.08), rgb(255, 255, 255, 0.05));
         border-bottom: 0.0694vw solid rgba(255, 255, 255, 0.20);
@@ -116,7 +115,7 @@
 
         .MenuButtonWrapper {
             margin-top: 2.5vh;
-            padding: 0 40px;
+            padding: 0 9.66vw;
             display: flex;
             width: 100vw;
             align-items: center;
@@ -126,8 +125,8 @@
 
     .MenuBlockActive {
         width: 100vw;
-        height: 9vh;
-        margin-top: 55px;
+        height: 16.9vw;
+        margin-top: 13.28vw;
         position: fixed;
         background: linear-gradient(0deg, rgb(255, 255, 255, 0.08), rgb(255, 255, 255, 0.05));
         border-bottom: 0.0694vw solid rgba(255, 255, 255, 0.20);
@@ -138,8 +137,8 @@
         overflow: hidden;
 
         .MenuButtonWrapper {
-            margin-top: 2.5vh;
-            padding: 0 40px;
+            margin-top: 4.83vw;
+            padding: 0 9.66vw;
             display: flex;
             width: 100vw;
             align-items: center;

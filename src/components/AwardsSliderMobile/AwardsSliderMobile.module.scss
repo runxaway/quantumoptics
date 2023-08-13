@@ -1,6 +1,6 @@
 .BorderBox {
-    height: 185px;
-    border-radius: 15px;
+    height: 44.68vw;
+    border-radius: 3.623vw;
     background: linear-gradient(136deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.04);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
     position: relative;
@@ -10,10 +10,10 @@
     &::before {
         content: '';
         position: absolute;
-        inset: calc(-1px);
+        inset: calc(-0.241vw);
         
-        border-radius: 16px;
-        padding: 1px;
+        border-radius: 3.864vw;
+        padding: 0.241vw;
         background: linear-gradient(100deg, rgb(255, 255, 255, 0.15), rgb(255, 255, 255, 0));
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -24,10 +24,10 @@
     &::after {
         content: '';
         position: absolute;
-        inset: calc(-1px);
+        inset: calc(-0.241vw);
         
-        border-radius: 16px;
-        padding: 1px;
+        border-radius: 3.864vw;
+        padding: 0.241vw;
         background: linear-gradient(-20deg, rgb(255, 255, 255, 0.30), rgb(255, 255, 255, 0));
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -36,8 +36,8 @@
     }
 
     .AwardsContainer {
-        width: 320px;
-        padding: 20px;
+        width: 77.294vw;
+        padding: 4.83vw;
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -50,11 +50,11 @@
         z-index: 4;
 
         .Award {
-            margin: 0 20px;
+            margin: 0 4.83vw;
             cursor: pointer;
 
             .AwardImage {
-                height: 145px;
+                height: 35.02vw;
                 object-fit: cover;
             }
         }
