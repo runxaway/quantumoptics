@@ -10,6 +10,11 @@ const HomeMobile = (): JSX.Element => {
     
     return (
         <div className={styles.HomeBody}>
+            <div className={styles.Stroke}>
+                <div className={styles.StrokeText}>
+                    Приглашаем Вас посетить наш стенд №1F6-3 на форуме “АРМИЯ 2023” // Приглашаем Вас посетить наш стенд №1F6-3 на форуме “АРМИЯ 2023”
+                </div>
+            </div>
             <div className={styles.FirstBlock}>
                 <SliderMobile />
             </div>
