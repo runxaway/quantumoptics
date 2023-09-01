@@ -2,30 +2,30 @@
     padding-top: 19.323vw;
     z-index: 1;
 
-    .Stroke {
-        background: #c6c9f0;
-        margin-bottom: 4.83vw;
-        height: 9vw;
-        overflow: hidden;
+    // .Stroke {
+    //     background: #c6c9f0;
+    //     margin-bottom: 4.83vw;
+    //     height: 9vw;
+    //     overflow: hidden;
 
-        .StrokeText {
-            padding-top: 2.415vw;
-            color: black;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-size: 3.38vw;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            white-space: nowrap;
-            animation: StrokeText 15s linear infinite;
-        }
-    }
+    //     .StrokeText {
+    //         padding-top: 2.415vw;
+    //         color: black;
+    //         text-align: center;
+    //         font-family: 'Roboto', sans-serif;
+    //         font-size: 3.38vw;
+    //         font-style: normal;
+    //         font-weight: 400;
+    //         line-height: normal;
+    //         white-space: nowrap;
+    //         animation: StrokeText 15s linear infinite;
+    //     }
+    // }
 
-    @keyframes StrokeText {
-        0%   { transform: translate(0, 0); }
-        100% { transform: translate(-100%, 0); }
-    }
+    // @keyframes StrokeText {
+    //     0%   { transform: translate(0, 0); }
+    //     100% { transform: translate(-100%, 0); }
+    // }
 
     .FirstBlock {
         padding-left: 4.83vw;

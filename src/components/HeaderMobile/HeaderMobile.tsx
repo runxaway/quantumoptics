@@ -14,35 +14,37 @@ export function HeaderMobile(): JSX.Element {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={styles.HeaderMenu}>
-            <div className={styles.Logo}>
-                <Link
-                    key={'home'}
-                    to={{
-                        pathname: ROUTES.HOME.END
-                    }}
+        <>
+            <div className={styles.HeaderMenu}>
+                <div className={styles.Logo}>
+                    <Link
+                        key={'home'}
+                        to={{
+                            pathname: ROUTES.HOME.END
+                        }}
+                    >
+                        Квантовая оптика
+                    </Link>
+                </div>
+                <div className={styles.Adress}>
+                    <ul>
+                        <li>
+                            +7-921-888-88-55
+                        </li>
+                        <li>
+                            Санкт-Петербург, Белоостровская, 22
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    className={isOpen ? styles.BurgerMenuActive : styles.BurgerMenu}
+                    onClick={() => setIsOpen(!isOpen)}
                 >
-                    Квантовая оптика
-                </Link>
-            </div>
-            <div className={styles.Adress}>
-                <ul>
-                    <li>
-                        +7-921-888-88-55
-                    </li>
-                    <li>
-                        Санкт-Петербург, Белоостровская, 22
-                    </li>
-                </ul>
-            </div>
-            <div
-                className={isOpen ? styles.BurgerMenuActive : styles.BurgerMenu}
-                onClick={() => setIsOpen(!isOpen)}
-            >
-                <img
-                    className={styles.Lines}
-                    src={isOpen ? close : lines}
-                />
+                    <img
+                        className={styles.Lines}
+                        src={isOpen ? close : lines}
+                    />
+                </div>
             </div>
             <div
                 className={isOpen ? styles.MenuBlockActive : styles.MenuBlock}
@@ -62,6 +64,6 @@ export function HeaderMobile(): JSX.Element {
                     />
                 </div>
             </div>
-        </div>
+        </>
     );
 }

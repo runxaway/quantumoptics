@@ -26,22 +26,7 @@ const Main = (): JSX.Element => {
 
     return (
         <>
-            {window.outerWidth < 420 ?
-                <>
-                    <HeaderMobile />
-                    <div className={styles.BackgroundBlurMobile}>
-                        <Routes>
-                            <Route path={ROUTES.HOME.END} element={<HomeMobile />} />
-            
-                            <Route path={ROUTES.PRODUCTS.END} element={<ProductsMobile />} />
-                            <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProductsMobile />} />
-                            <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProductMobile />} />
-                            
-                            <Route path={ROUTES.PUBLICATIONS.END} element={<PublicationsMobile />} />
-                            <Route path={ROUTES.CONTACTS.END} element={<ContactsMobile />} />
-                        </Routes>
-                    </div>
-                </> :
+            {window.outerWidth > 420 ?
                 <>
                     <Header />
                     <div className={styles.BackgroundBlur}>
@@ -54,6 +39,21 @@ const Main = (): JSX.Element => {
                             
                             <Route path={ROUTES.PUBLICATIONS.END} element={<Publications />} />
                             <Route path={ROUTES.CONTACTS.END} element={<Contacts />} />
+                        </Routes>
+                    </div>
+                </> :
+                <>
+                    <HeaderMobile />
+                    <div className={styles.BackgroundBlurMobile}>
+                        <Routes>
+                            <Route path={ROUTES.HOME.END} element={<HomeMobile />} />
+            
+                            <Route path={ROUTES.PRODUCTS.END} element={<ProductsMobile />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').END} element={<SubProductsMobile />} />
+                            <Route path={ROUTES.PRODUCTS.$(':productId').$(':subProductId').INFO.END} element={<AboutProductMobile />} />
+                            
+                            <Route path={ROUTES.PUBLICATIONS.END} element={<PublicationsMobile />} />
+                            <Route path={ROUTES.CONTACTS.END} element={<ContactsMobile />} />
                         </Routes>
                     </div>
                 </>
